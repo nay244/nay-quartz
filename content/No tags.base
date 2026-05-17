@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.isEmpty()
+        - file.ext == "md"
+        - '!file.inFolder("tags")'
+    order:
+      - file.name
+      - file.mtime
+      - file.path
+      - file.size
+      - draft
+    columnSize:
+      file.mtime: 208
