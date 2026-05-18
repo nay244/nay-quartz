@@ -118,8 +118,7 @@ export default (() => {
             </svg>
           </div>
           <div class="site-wordmark">
-            <span class="site-name">Nay</span>
-            <span class="site-tagline">DIGITAL GARDEN</span>
+            <span class="site-name">Nay's Digital Garden</span>
           </div>
         </div>
         <div class="site-header-right">
@@ -143,45 +142,21 @@ export default (() => {
         <div class="content-container">
           {/* Terminal hero prompt */}
           <div class="hero-prompt">
-            <span class="prompt-symbol">~/garden $</span>
-            &nbsp;whoami
+            <span class="prompt-symbol">~/nay@digital-garden $</span>
+            &nbsp;welcome
             <span class="prompt-cursor" />
           </div>
 
-          <p class="landing-header">Welcome to My Personal Repository</p>
+          <p class="landing-header"> Hi, I am <a href="./about-me">Nay Naing</p>
 
           <div class="landing-intro">
-            <p>
-              Hi, I am <a href="./about-me">Nay Naing</a>.
-            </p>
             <p>
               This site will serve as a companion on my journey to a well-examined life. It's where
               I weave together my thoughts, my learning, and my memories to create a narrative
               that's uniquely mine.
             </p>
-            <div class="callout" data-callout="info">
-              <div class="callout-title">
-                <div class="callout-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="16" x2="12" y2="12" />
-                    <line x1="12" y1="8" x2="12.01" y2="8" />
-                  </svg>
-                </div>
-                <div class="callout-title-inner">
-                  <p>Favorite Quote</p>
-                </div>
-              </div>
+            <div class="article-header">
+              <h1>Favorite Quote</h1>
               <p>
                 "<u>
                   <em>

@@ -17,7 +17,6 @@ export default (() => {
         segments.push(`Written by ${fileData.frontmatter.authors.join(", ")}`)
       }
 
-      segments.push(timeTaken)
       return <p class={`content-meta ${displayClass ?? ""}`}>{segments.join(", ")}</p>
     } else {
       return null
