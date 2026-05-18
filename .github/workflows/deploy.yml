@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Fix Quartz binary permissions
+        run: chmod +x ./node_modules/.bin/quartz
+
       - name: Build Quartz site
         run: npx quartz build
 
