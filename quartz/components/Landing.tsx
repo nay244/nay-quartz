@@ -167,12 +167,14 @@ export default (() => {
                 </u>
                 ."
                 <br />
-                — <strong>
-                  <a href="https://www.goodreads.com/en/book/show/31997446" target="_blank">
-                    N.R. Walker
-                  </a>
-                </strong>{" "}
-                (2016)
+                <span class="quote-attribution">
+                  — <strong>
+                    <a href="https://www.goodreads.com/en/book/show/31997446" target="_blank">
+                      N.R. Walker
+                    </a>
+                  </strong>{" "}
+                  (2016)
+                </span>
               </p>
             </div>
           </div>
