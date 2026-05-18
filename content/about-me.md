@@ -28,9 +28,9 @@ In no particular order, my hobbies are:
 
 ## Contact me
 
-Get in contact with me here naaay.naing@gmail.com
-Github: [Nay244] (https://github.com/nay244/)
-LinkedIn: [Nay Naing] (https://www.linkedin.com/in/naaay-naing/)
+* Email: naaay.naing@gmail.com
+* Github: [Nay244] (https://github.com/nay244/)
+* LinkedIn: [Nay Naing] (https://www.linkedin.com/in/naaay-naing/)
 
 ---
 
