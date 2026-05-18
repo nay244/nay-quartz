@@ -6,26 +6,8 @@ title: Knowledge Base
 This section will contain a collection of things regarding data analysis. It will serve as a top-level index page.
 
 ## Resources
-* [[sql|SQL]]
 * [[knowledge-base#python|Python]]
 * [[knowledge-base#excel|Excel]]
-  
-## Projects
-* [[melodyCraft|MelodyCraft]]
-
-## WGU Data Analytics Courses
-
-* [[wgu#d204---the-data-analytics-journey|D204]] - The Data Analytics Journey
-* [[wgu#d205---data-acquisition|D205]] - Data Acquisition
-* [[wgu#d206---data-cleaning|D206]] - Data Cleaning
-* [[wgu#d207---exploratory-data-analysis|D207]] - Exploratory Data Analysis
-* [[wgu#d208---predictive-modeling|D208]] - Predictive Modeling
-* [[wgu#d209---data-mining-i|D209]] - Data Mining I
-* [[wgu#d210---representation-and-reporting|D210]] - Representation and Reporting
-* [[wgu#d211---advanced-data-acquisition|D211]] - Advanced Data Acquisition
-* [[wgu#d212---data-mining-ii|D212]] - Data Mining II
-* [[wgu#d213---advanced-data-analytics|D213]] - Advanced Data Analytics
-* [[wgu#d214---data-analytics-graduate-capstone|D214]] - Data Analytics Graduate Capstone
 
 ---
 
