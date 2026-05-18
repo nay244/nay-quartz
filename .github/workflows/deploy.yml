@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,10 +30,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Fix Quartz binary permissions
-        run: chmod +x ./node_modules/.bin/quartz
+        run: chmod +x ./quartz/bootstrap-cli.mjs
 
       - name: Build Quartz site
         run: npx quartz build
