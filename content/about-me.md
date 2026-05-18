@@ -24,16 +24,13 @@ In no particular order, my hobbies are:
  * Chess
    * Blitz(1900-2000) | Bullet(1900-2000) | Rapid(1900-2000)
  * Music (JPop, Pop, Rap, KPop, LoFi)
-   * [Night Dancer (Imase) Currently my favorite song.
+   * Night Dancer (Imase) Currently my favorite song.
 
-## Social media
-
- * Github: [Nay244] (https://github.com/nay244/)
- * LinkedIn: [Nay Naing] (https://www.linkedin.com/in/naaay-naing/)
-
-## Email
+## Contact me
 
 Get in contact with me here naaay.naing@gmail.com
+Github: [Nay244] (https://github.com/nay244/)
+LinkedIn: [Nay Naing] (https://www.linkedin.com/in/naaay-naing/)
 
 ---
 
