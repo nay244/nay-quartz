@@ -288,6 +288,11 @@
   }
 }
 
+/* header-card lives in the article content area at ≤ 1550px (mobile-only class) */
+@media screen and (max-width: 1550px) {
+  .header-card { width: 300px; }
+}
+
 @media screen and (max-width: 700px) {
   .header-card { width: 280px; }
 
