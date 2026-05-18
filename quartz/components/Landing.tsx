@@ -9,7 +9,7 @@ export const CARDS = {
       <div class="card card-1">
         <p class="card-title">About Me</p>
         <p class="card-subhead">Node 01</p>
-        <img src="./static/nodes/node-about.svg" class="card-illustration-1" />
+        <img src="./static/node-about.svg" class="card-illustration-1" />
       </div>
     </a>
   ),
@@ -18,7 +18,7 @@ export const CARDS = {
       <div class="card card-2">
         <p class="card-title">Career</p>
         <p class="card-subhead">Node 02</p>
-        <img src="./static/nodes/node-career.svg" class="card-illustration-2" />
+        <img src="./static/node-career.svg" class="card-illustration-2" />
       </div>
     </a>
   ),
@@ -27,7 +27,7 @@ export const CARDS = {
       <div class="card card-3">
         <p class="card-title">Projects</p>
         <p class="card-subhead">Node 03</p>
-        <img src="./static/nodes/node-projects.svg" class="card-illustration-3" />
+        <img src="./static/node-projects.svg" class="card-illustration-3" />
       </div>
     </a>
   ),
@@ -36,7 +36,7 @@ export const CARDS = {
       <div class="card card-4">
         <p class="card-title">Knowledge Base</p>
         <p class="card-subhead">Node 04</p>
-        <img src="./static/nodes/node-knowledge.svg" class="card-illustration-4" />
+        <img src="./static/node-knowledge.svg" class="card-illustration-4" />
       </div>
     </a>
   ),
@@ -45,7 +45,7 @@ export const CARDS = {
       <div class="card card-5">
         <p class="card-title">Blog</p>
         <p class="card-subhead">Node 05</p>
-        <img src="./static/nodes/node-blog.svg" class="card-illustration-5" />
+        <img src="./static/node-blog.svg" class="card-illustration-5" />
       </div>
     </a>
   ),
@@ -54,7 +54,7 @@ export const CARDS = {
       <div class="card card-6">
         <p class="card-title">Language Learning</p>
         <p class="card-subhead">Node 06</p>
-        <img src="./static/nodes/node-language.svg" class="card-illustration-6" />
+        <img src="./static/node-language.svg" class="card-illustration-6" />
       </div>
     </a>
   ),
@@ -63,7 +63,7 @@ export const CARDS = {
       <div class="card card-7">
         <p class="card-title">WGU</p>
         <p class="card-subhead">Node 07</p>
-        <img src="./static/nodes/node-wgu.svg" class="card-illustration-7" />
+        <img src="./static/node-wgu.svg" class="card-illustration-7" />
       </div>
     </a>
   ),
@@ -72,7 +72,7 @@ export const CARDS = {
       <div class="card card-8">
         <p class="card-title">Index & Maps</p>
         <p class="card-subhead">Node 08</p>
-        <img src="./static/nodes/node-index.svg" class="card-illustration-8" />
+        <img src="./static/node-index.svg" class="card-illustration-8" />
       </div>
     </a>
   ),
@@ -218,7 +218,7 @@ export default (() => {
                 <div class={`card card-${n}`}>
                   <p class="card-title">{title}</p>
                   <p class="card-subhead">{node}</p>
-                  <img src={`./static/nodes/${img}`} class={`card-illustration-${n}`} />
+                  <img src={`./static/${img}`} class={`card-illustration-${n}`} />
                 </div>
               </a>
             ))}

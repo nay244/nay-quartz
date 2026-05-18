@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
         header: "Source Serif 4",
@@ -62,7 +62,7 @@ const config: QuartzConfig = {
     filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.AliasRedirects(),
-      Plugin.ComponentResources({ fontOrigin: "googleFonts" }),
+      Plugin.ComponentResources({ fontOrigin: "local" }),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),

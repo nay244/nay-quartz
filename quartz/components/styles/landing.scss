@@ -252,26 +252,26 @@
 .card-7 { border-left: 3px solid #e18fa7; }
 .card-8 { border-left: 3px solid #7fa89a; }
 
-/* ─── Illustration positions (full-size, used on article pages) ──────────── */
-.card-illustration-1 { position: absolute; bottom: -4px;  right: 8px;   width: 55%; }
-.card-illustration-2 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-3 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-4 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-5 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-6 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-7 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
-.card-illustration-8 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+/* ─── Illustration positions (full-size, used on article page header cards) ── */
+.card-illustration-1 { position: absolute; bottom: 0;    right: -10px; width: 75%; }
+.card-illustration-2 { position: absolute; bottom: 0;    right: -6px;  width: 70%; }
+.card-illustration-3 { position: absolute; bottom: 0;    right: -6px;  width: 70%; }
+.card-illustration-4 { position: absolute; bottom: 0;    right: -6px;  width: 70%; }
+.card-illustration-5 { position: absolute; bottom: 0;    right: -6px;  width: 80%; }
+.card-illustration-6 { position: absolute; bottom: 0;    right: -6px;  width: 80%; }
+.card-illustration-7 { position: absolute; bottom: 0;    right: -6px;  width: 80%; }
+.card-illustration-8 { position: absolute; bottom: 0;    right: -6px;  width: 80%; }
 
-/* Compact sizes scoped to the landing grid only */
+/* Landing-grid compact sizes */
 .issue-container {
-  .card-illustration-1 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-2 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-3 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-4 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-5 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-6 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-7 { width: 42%; right: 4px; bottom: -2px; }
-  .card-illustration-8 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-1 { width: 60%; right: -6px; bottom: 0; }
+  .card-illustration-2 { width: 55%; right: -4px; bottom: 0; }
+  .card-illustration-3 { width: 55%; right: -4px; bottom: 0; }
+  .card-illustration-4 { width: 55%; right: -4px; bottom: 0; }
+  .card-illustration-5 { width: 65%; right: -4px; bottom: 0; }
+  .card-illustration-6 { width: 65%; right: -4px; bottom: 0; }
+  .card-illustration-7 { width: 65%; right: -4px; bottom: 0; }
+  .card-illustration-8 { width: 65%; right: -4px; bottom: 0; }
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
