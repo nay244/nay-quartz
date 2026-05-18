@@ -147,7 +147,7 @@ export default (() => {
             <span class="prompt-cursor" />
           </div>
 
-          <p class="landing-header"> Hi, I am <a href="./about-me">Nay Naing</p>
+          <p class="landing-header">Hi, I am <a href="./about-me">Nay Naing</a>.</p>
 
           <div class="landing-intro">
             <p>
