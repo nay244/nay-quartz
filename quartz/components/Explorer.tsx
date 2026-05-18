@@ -8,29 +8,40 @@ import { QuartzPluginData } from "../plugins/vfile"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
-  title: "Issues",
+  title: "Nodes",
   folderClickBehavior: "collapse",
   folderDefaultState: "collapsed",
   useSavedState: true,
   sortFn: (a, b) => {
-    if (a.file?.frontmatter?.issueNo && b.file?.frontmatter?.issueNo) {
-      return a.file.frontmatter.issueNo - b.file.frontmatter.issueNo
-    }
+    // Canonical node order matching the landing page
+    const NODE_ORDER = [
+      "about-me",
+      "career",
+      "projects",
+      "knowledge-base",
+      "blog",
+      "language-learning",
+      "wgu",
+      "index-maps",
+    ]
 
-    // Sort order: folders first, then files. Sort folders and files alphabetically
+    const aIdx = NODE_ORDER.indexOf(a.file?.slug ?? "")
+    const bIdx = NODE_ORDER.indexOf(b.file?.slug ?? "")
+
+    // Both are top-level nodes — sort by landing-page position
+    if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx
+    // One is a top-level node, it floats to the top
+    if (aIdx !== -1) return -1
+    if (bIdx !== -1) return 1
+
+    // Fallback: folders before files, then alphabetical
     if ((!a.file && !b.file) || (a.file && b.file)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
       return a.displayName.localeCompare(b.displayName, undefined, {
         numeric: true,
         sensitivity: "base",
       })
     }
-    if (a.file && !b.file) {
-      return 1
-    } else {
-      return -1
-    }
+    return a.file ? 1 : -1
   },
   filterFn: (node) => node.name !== "tags",
   order: ["filter", "map", "sort"],

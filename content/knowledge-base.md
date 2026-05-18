@@ -6,26 +6,26 @@ title: Knowledge Base
 This section will contain a collection of things regarding data analysis. It will serve as a top-level index page.
 
 ## Resources
-* [[SQL]]
-* [[Python]]
-* [[Excel]]
+* [[sql|SQL]]
+* [[knowledge-base#python|Python]]
+* [[knowledge-base#excel|Excel]]
   
 ## Projects
-* [[MelodyCraft]]
+* [[melodyCraft|MelodyCraft]]
 
 ## WGU Data Analytics Courses
 
-* [[D204]] - The Data Analytics Journey
-* [[D205]] - Data Acquisition
-* [[D206]] - Data Cleaning
-* [[D207]] - Exploratory Data Analysis
-* [[D208]] - Predictive Modeling
-* [[D209]] - Data Mining I
-* [[D210]] - Representation and Reporting
-* [[D211]] - Advanced Data Acquisition
-* [[D212]] - Data Mining II
-* [[D213]] - Advanced Data Analytics
-* [[D214]] - Data Analytics Graduate Capstone
+* [[wgu#d204---the-data-analytics-journey|D204]] - The Data Analytics Journey
+* [[wgu#d205---data-acquisition|D205]] - Data Acquisition
+* [[wgu#d206---data-cleaning|D206]] - Data Cleaning
+* [[wgu#d207---exploratory-data-analysis|D207]] - Exploratory Data Analysis
+* [[wgu#d208---predictive-modeling|D208]] - Predictive Modeling
+* [[wgu#d209---data-mining-i|D209]] - Data Mining I
+* [[wgu#d210---representation-and-reporting|D210]] - Representation and Reporting
+* [[wgu#d211---advanced-data-acquisition|D211]] - Advanced Data Acquisition
+* [[wgu#d212---data-mining-ii|D212]] - Data Mining II
+* [[wgu#d213---advanced-data-analytics|D213]] - Advanced Data Analytics
+* [[wgu#d214---data-analytics-graduate-capstone|D214]] - Data Analytics Graduate Capstone
 
 ---
 
@@ -52,7 +52,7 @@ I want to build a strong foundation in spreadsheet manipulation, master the art 
   * [Datacamp](https://www.datacamp.com/cheat-sheet/getting-started-with-excel-cheat-sheet) Excel cheatsheet provided by Datacamp.
   * [Excel Practice](https://excel-practice-online.com/) Website to practice and learn excel functions and tools on the browser window.
   Every function and tool has an explanation followed by an online excel exercise which can be solved within the page itself, no need to download anything.
-  * [[Pluralsight_Excel]]
+  * [[knowledge-base#pluralsight-excel-365-training|Pluralsight Excel]]
 
 ---
 
@@ -292,7 +292,7 @@ I want to build a strong foundation in programming, understand the basics of dat
 ## Resources
   * [Dataquest](https://www.dataquest.io/course/introduction-to-python/) Dataquest teaches Python syntax in the context of learning data science.
   * [Python Tutorial](https://docs.python.org/3/tutorial/) Tutorial on main Python site.
-  * [[PythonCommands]]
+  * [[knowledge-base#python-cheatsheet|Python Commands]]
 
 ---
 

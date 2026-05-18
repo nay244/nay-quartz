@@ -14,27 +14,27 @@ method to make sense of Japanese.
 I don't really have any plans to make this into a thorough and comprehensive repository, just
 a place to dump all kind of scattered resources.
 
-For a quick primer, read [[Japanese-Primer]].
+For a quick primer, read [[language-learning#japanese-primer|Japanese Primer]].
 
 ## Interesting things to read
 
- * [[Japanese-Frequently-Asked-Questions]]
+ * [[language-learning#japanese-frequently-asked-questions|Japanese Frequently Asked Questions]]
  * If you're looking for a good **starting point** to learn
    Japanese:
     * [[58465ab9|Japanese Learning Loop]]
  * To improve your conversational Japanese:
-    * [[Learning-to-Output]]
- * [[Collection-of-Japanese-phrases-your-textbook-won't-teach-you]]
+    * [[language-learning#learning-to-output|Learning to Output]]
+ * [[language-learning#collection-of-japanese-phrases-your-textbook-wont-teach-you|Collection of Japanese Phrases Your Textbook Won't Teach You]]
  * Series of articles if you are interested in the
    **Japanese writing system**:
-    * [[Kanji]]
+    * [[language-learning#kanji|Kanji]]
  * Some **tips** to help make sense of Japanese:
-    * [[Unlocking-Japanese-Tricks]]
+    * [[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]]
  * Various **Japanese learning resources**
     * [[9f88358f|Japanese Resources]]
  * General language approach philosophy:
-    * [[Optimal-Reading-Immersion---Narrow-Reading]]
-    * [[The-science-of-letting-go]]
+    * [[language-learning#optimal-reading-immersion---narrow-reading|Optimal Reading Immersion - Narrow Reading]]
+    * [[language-learning#the-science-of-letting-go|The Science of Letting Go]]
   
 ### NOTE
 
@@ -44,34 +44,34 @@ This entirety of this Japanese section and all the contents within is credited t
 
 * [[58465ab9|Japanese Learning Loop]]
 * [[99eaf9c2|Japanese Writing Systems]]
-* [[Kanji]]
-* [[Ateji]]
-* [[Furigana]]
-* [[Gikun]]
-* [[Onyomi-and-Kunyomi]]
-* [[Japanese-Frequently-Asked-Questions]]
-* [[Japanese-Primer]]
-* [[EJLX]]
-* [[Anki]]
-* [[Migaku]]
-* [[Refold]]
-* [[Learning-to-Output]]
-* [[Unlocking-Japanese-Tricks]]
-* [[Practical-Tips-to-Facilitate-Early-Reading]]
-* [[Optimal-Reading-Immersion---Narrow-Reading]]
-* [[The-science-of-letting-go]]
-* [[Collection-of-Japanese-phrases-your-textbook-won't-teach-you]]
-* [[How-do-I-pronounce-this-word]]
-* [[How-do-I-read-this-word]]
-* [[How-do-I-read-this-math-expression-in-Japanese]]
-* [[How-do-I-look-up-the-meaning-of-this-kanji]]
-* [[What-does-this-word-mean]]
-* [[What-does-this-contraction-mean]]
-* [[What-does-this-particle-or-grammar-structure-mean]]
-* [[What-is-the-counter-for-this-word]]
-* [[What-is-the-difference-between-these-two-words]]
-* [[What-is-the-difference-between-this-word-written-with-these-two-different-kanji]]
-* [[What-words-or-particles-should-I-use-with-this-verb]]
+* [[language-learning#kanji|Kanji]]
+* [[language-learning#ateji|Ateji]]
+* [[language-learning#furigana|Furigana]]
+* [[language-learning#gikun|Gikun]]
+* [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]]
+* [[language-learning#japanese-frequently-asked-questions|Japanese Frequently Asked Questions]]
+* [[language-learning#japanese-primer|Japanese Primer]]
+* [[language-learning#ejlx|EJLX]]
+* [[language-learning#anki|Anki]]
+* [[language-learning#migaku|Migaku]]
+* [[language-learning#refold|Refold]]
+* [[language-learning#learning-to-output|Learning to Output]]
+* [[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]]
+* [[language-learning#practical-tips-to-facilitate-early-reading|Practical Tips to Facilitate Early Reading]]
+* [[language-learning#optimal-reading-immersion---narrow-reading|Optimal Reading Immersion - Narrow Reading]]
+* [[language-learning#the-science-of-letting-go|The Science of Letting Go]]
+* [[language-learning#collection-of-japanese-phrases-your-textbook-wont-teach-you|Collection of Japanese Phrases Your Textbook Won't Teach You]]
+* [[language-learning#how-do-i-pronounce-this-word|How Do I Pronounce This Word]]
+* [[language-learning#how-do-i-read-this-word|How Do I Read This Word]]
+* [[language-learning#how-do-i-read-this-math-expression-in-japanese|How Do I Read This Math Expression in Japanese]]
+* [[language-learning#how-do-i-look-up-the-meaning-of-this-kanji|How Do I Look Up the Meaning of This Kanji]]
+* [[language-learning#what-does-this-word-mean|What Does This Word Mean]]
+* [[language-learning#what-does-this-contraction-mean|What Does This Contraction Mean]]
+* [[language-learning#what-does-this-particle-or-grammar-structure-mean|What Does This Particle or Grammar Structure Mean]]
+* [[language-learning#what-is-the-counter-for-this-word|What Is the Counter for This Word]]
+* [[language-learning#what-is-the-difference-between-these-two-words|What Is the Difference Between These Two Words]]
+* [[language-learning#what-is-the-difference-between-this-word-written-with-these-two-different-kanji|What Is the Difference Between This Word Written With These Two Different Kanji]]
+* [[language-learning#what-words-or-particles-should-i-use-with-this-verb|What Words or Particles Should I Use With This Verb]]
 
 ---
 
@@ -96,7 +96,7 @@ Learn [Hiragana](https://www.tofugu.com/japanese/learn-hiragana/) and
 
 **THEN**:
 
-Learn Grammar + Vocab + [[Kanji]]
+Learn Grammar + Vocab + [[language-learning#kanji|Kanji]]
 
 **Do NOT** skip ahead, do kana first. Japanese will still be there after you're
 done with them don't worry.
@@ -110,7 +110,7 @@ done with them don't worry.
 
 ## Vocab
 
- * Install and learn how to use [[Anki]] (Also read [this page](https://refold.la/roadmap/stage-1/c/srs-best-practices))
+ * Install and learn how to use [[language-learning#anki|Anki]] (Also read [this page](https://refold.la/roadmap/stage-1/c/srs-best-practices))
 
  * Grab a core deck and start learning **core** vocab. My recommendation is to
    get the N5 and N4 [ankidrone starter pack](https://tatsumoto.neocities.org/blog/basic-vocabulary#anki-deck)
@@ -125,17 +125,17 @@ You don't need to worry about kanji, they can wait for later. Focus on learning
 out what to do about it later, trust me.
 
 It is **much** easier to learn kanji if you already know a lot of words, so just
-learn those words. No need to rush it. Read stuff with [[Furigana]] at first so
+learn those words. No need to rush it. Read stuff with [[language-learning#furigana|Furigana]] at first so
 you won't have to worry about it. Use [yomichan](https://foosoft.net/projects/yomichan/)
-to read on the web. See also: [[Practical-Tips-to-Facilitate-Early-Reading]]
+to read on the web. See also: [[language-learning#practical-tips-to-facilitate-early-reading|Practical Tips to Facilitate Early Reading]]
 
 ## Extra
 
- - Bookmark [[Japanese-Frequently-Asked-Questions]] and
-   [[Unlocking-Japanese-Tricks]] and **read them** every time you are confused
+ - Bookmark [[language-learning#japanese-frequently-asked-questions|Japanese Frequently Asked Questions]] and
+   [[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]] and **read them** every time you are confused
    about something.
- - Read [[58465ab9]] if you want a more general overview.
- - Read [[9f88358f]] if you want alternative options to the resources mentioned
+ - Read [[58465ab9|Japanese Learning Loop]] if you want a more general overview.
+ - Read [[9f88358f|Japanese Resources]] if you want alternative options to the resources mentioned
    above. I also go in more details about each of them.
  - Read [[e50a5ae3]] if you're looking for something to read that might suit a
    beginner.
@@ -163,7 +163,7 @@ then use something else.
 # Japanese Learning Resources
 
 This is a mostly scattered collection of sites, tooling, and all kind of things
-that can help you learn [[Japanese]].
+that can help you learn [[language-learning#japanese|Japanese]].
 
 ## Comprehensive Guides
 
@@ -183,14 +183,14 @@ that one, really.
 MIA's specific quick start guide on how to study Japanese using the
 [[4f5f4e00]] tools and resources. MIA's focus is on extensive immersion and
 natural acquisition of the language. It is worth checking out for the amount of
-resources they have mostly related to [[Anki]] but ever since the split
-most of them are under the [[Migaku]] umbrella now.
+resources they have mostly related to [[language-learning#anki|Anki]] but ever since the split
+most of them are under the [[language-learning#migaku|Migaku]] umbrella now.
 
 ### [Awesome Japanese Beginner Guide](https://github.com/EngJpDiscordExchange/Awesome-Japanese/blob/master/readme.md#beginner-guide)
 
 This is really a collection of various tools, textbooks, links, etc (similar to
 this very own page). It's a collaborative project from various people at the
-[[EJLX]]# discord.
+[[language-learning#ejlx|EJLX]]# discord.
 
 ### [r/LearnJapanese Beginner Wiki](https://www.reddit.com/r/LearnJapanese/wiki/index/startersguide)
 
@@ -227,7 +227,7 @@ Another textbook like Genki with a classroom-like lesson structure. It covers
 about the same topics as Genki, and personally it's what I've used myself. I
 would recommend it over Genki as I found it to have a better format, but overall
 they are very similar. Get the kana version, don't even bother with the romaji
-one([[99eaf9c2]]).
+one([[99eaf9c2|Japanese Writing Systems]]).
 
 ### [Japanese the Manga Way](https://www.tofugu.com/reviews/japanese-the-manga-way/)
 
@@ -404,17 +404,17 @@ in your browser.
 # Japanese Learning Loop
 
 No matter what approach you are looking at, to achieve fluency in a language the
-most important thing is being able to achieve **learning independence**. ([[Unlocking-Japanese-Tricks]])
+most important thing is being able to achieve **learning independence**. ([[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]])
 In other words, being able to sustain your own studies and maintain a tangible
 process of consistent self-improvement feedback loop.
 
 The basis of this *language acquisition* loop are the same for any
 language but the specifics may differ.
 
-This is my approach to [[Japanese]] learning, I hope it can be useful to you as
+This is my approach to [[language-learning#japanese|Japanese]] learning, I hope it can be useful to you as
 it has been to me.
 
-If you feel lost and just want a quick **tl;dr**: read [[Japanese-Primer]].
+If you feel lost and just want a quick **tl;dr**: read [[language-learning#japanese-primer|Japanese Primer]].
 
 ## Diagram
 
@@ -428,7 +428,7 @@ while we all share the same baseline, we may prefer one way or the other.
 
 At the end of the day, you should consider this loop as a loose guideline on
 how to orient yourself in the landscape of Japanese learning, and learn to
-take advantage of the various [[9f88358f]] at your disposal.
+take advantage of the various [[9f88358f|Japanese Resources]] at your disposal.
 
 <br />
 
@@ -484,7 +484,7 @@ knowing when/how to use them.
 
 #### Anki Core Deck
 
-The purpose of a starting core deck for [[Anki]] is to get you started with
+The purpose of a starting core deck for [[language-learning#anki|Anki]] is to get you started with
 basic words that you absolutely need to be able to start reading native material
 on your own. Later you will be building your own deck as you learn new words, so
 don't get too attached to this one, it is but a starting point to get your feet
@@ -506,7 +506,7 @@ the [VNCore1250 deck](https://mega.nz/#!GiAQzY7C!ZDTQH1Kl23E-UaVAWJWFKPe4Jx_Qk1m
 It contains the ~1200 most frequent words in Visual Novels. This also carries
 over really well for anime, manga, and videogames too.
 
-One tip for [[Anki]] in general is to change the default settings, because
+One tip for [[language-learning#anki|Anki]] in general is to change the default settings, because
 they are horrible.
 
 I won't specifically tell you to skip the next **optional** step, because some
@@ -522,7 +522,7 @@ if you aren't into it, you can skip it without issues.
 #### RTK
 
 [Remembering The Kanji](https://kanji.koohii.com/) is a specific method of
-[[Kanji]] study so that you can more easily become familiar at recalling the
+[[language-learning#kanji|Kanji]] study so that you can more easily become familiar at recalling the
 shapes and loose meanings of each and every glyph. This is to make it easier
 for you to later learn the actual words as you encounter them in the language.
 
@@ -600,7 +600,7 @@ dialogues, etc...
 ### Sentence Mining Deck (preparation)
 
 There's an [overall guide](https://refold.la/roadmap/stage-2/a/basic-sentence-mining)
-on sentence mining and sentence cards on the [[Refold]] website.
+on sentence mining and sentence cards on the [[language-learning#refold|Refold]] website.
 
 The idea is that you read native material, find stuff that you don't know, and
 add it to this deck so you can review it later.
@@ -630,7 +630,7 @@ so that should be your absolute priority.
 Only you know what you find enjoyable, don't let anyone else tell you otherwise.
 
 If you are worried about what you **should** be reading, consider giving this
-article a read: [[Optimal-Reading-Immersion---Narrow-Reading]]. At the end of
+article a read: [[language-learning#optimal-reading-immersion---narrow-reading|Optimal Reading Immersion - Narrow Reading]]. At the end of
 the day, it really doesn't matter. Just try to find stuff you enjoy and stick
 with it.
 
@@ -639,7 +639,7 @@ language learners (fake conversations, textbook readings, etc). Try to aim for
 young native material instead (children manga, etc).
 
 For possible starting points, refer to
-[[Practical-Tips-to-Facilitate-Early-Reading]] and [[e50a5ae3]].
+[[language-learning#practical-tips-to-facilitate-early-reading|Practical Tips to Facilitate Early Reading]] and [[e50a5ae3]].
 
 ### Consumption Phase
 
@@ -659,7 +659,7 @@ on. You need to make it a part of your life, and enjoy doing so.
 ### Improvement Phase
 
 Whenever you find some word or grammar you do not understand, look it up using
-the approaches explained in [[Unlocking-Japanese-Tricks]].
+the approaches explained in [[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]].
 
 As you see fit, add new words or sentences to your sentence mining deck,
 and repeat. When you run out of material, go back to the **Discovery Phase**
@@ -667,7 +667,7 @@ and find something new to consume.
 
 Once you start to feel more confident in your input, and you feel like you want
 to challenge yourself in starting to output as well, take a look at the
-[[Learning-to-Output]] page.
+[[language-learning#learning-to-output|Learning to Output]] page.
 
 ## Step 3: Fluency
 
@@ -796,7 +796,7 @@ quirks in the speech of some characters and that can throw off people who aren't
 used to it. I would instead recommend Flying Witch or Futari Gohan over it.
 
 One thing that makes this manga quite special is that there's a lot of online
-resources and [[Anki]] decks which can help a lot in getting through it.
+resources and [[language-learning#anki|Anki]] decks which can help a lot in getting through it.
 
 [Link](https://myanimelist.net/manga/104/Yotsuba_to)
 
@@ -950,7 +950,7 @@ text, the English translation can be a huge help in understanding.
 material for absolute beginners. However I put it here for two reasons:
  * I read it as a relative beginner myself and I was able to enjoy it thanks to
    being able to just "let go" of the parts I didn't understand and still have
-   fun ([[The-science-of-letting-go]]), and
+   fun ([[language-learning#the-science-of-letting-go|The Science of Letting Go]]), and
  * If you follow my list of recommendations "in order" by the time you reach
    this entry you might be able to enjoy it yourself too.
 
@@ -1003,7 +1003,7 @@ Very cute light novel. The first light novel I actually read from front to back
 The language is very simple and straightforward when it comes to grammar and
 pacing. Vocabulary-wise, there are a few words that are very technical/specific
 to videogames and isekai-style fantasy novels, but once you look them up and add
-them to your [[Anki]] mining deck, the complexity drops significantly for
+them to your [[language-learning#anki|Anki]] mining deck, the complexity drops significantly for
 the rest of the book.
 
 The story is... alright. It's not the most exciting (at least the first volume),
@@ -1088,7 +1088,7 @@ except it's often used to spell foreign words or to give a bold/italics-like
 emphasis to Japanese words. You can compare it to WRITING IN ALL CAPS in
 English.
 
-## [[Kanji]]
+## [[language-learning#kanji|Kanji]]
 
 This is the Chinese [logographic](https://en.wikipedia.org/wiki/Logogram)
 writing system that has been historically adpoted by Japanese centuries ago due
@@ -1287,7 +1287,7 @@ You can think of <ruby>音読<rt>おんよ</rt></ruby>み and <ruby>訓読<rt>�
 as the equivalent of Latin and Greek roots for modern European languages.
 
 Further reading:
- * [[Ateji]] - Irregular kanji readings explained.
+ * [[language-learning#ateji|Ateji]] - Irregular kanji readings explained.
  * [Tofugu: ON'YOMI and KUN'YOMI IN KANJI: WHAT'S THE DIFFERENCE?](https://www.tofugu.com/japanese/onyomi-kunyomi/)
 
 ---
@@ -1316,7 +1316,7 @@ Example:
  * <ruby>Latin Text<rt>Furigana</rt></ruby>
 
 As you can see, there's no hard rules about what goes in furigana. For some
-[[Ateji]] words, you will often see katakana as furigana. Sometimes authors even
+[[language-learning#ateji|Ateji]] words, you will often see katakana as furigana. Sometimes authors even
 like having fun and put kanji as furigana for other kanji:
 
 <center>
@@ -1327,10 +1327,10 @@ like having fun and put kanji as furigana for other kanji:
 
 ## Origins
 
-When [[Kanji]] first arrived in Japan, it was used to render Chinese (usually
+When [[language-learning#kanji|Kanji]] first arrived in Japan, it was used to render Chinese (usually
 religious) scriptures. In the timespan of half a millennia-ish (400AD -> 1000AD)
 kanji became not only a Chinese import, but also a representation of the local
-language with complex pronunciations and readings (see: [[Onyomi-and-Kunyomi]]).
+language with complex pronunciations and readings (see: [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]]).
 
 As a practice common in all Chinese territories at the time, like the Korean
 peninsula or Vietnam, various glossings and annotations were added to these
@@ -1351,7 +1351,7 @@ You'll find furigana everywhere and especially for Japanese learners it can be
 a lifesaver. It makes it easier to read complex words and also makes it possible
 to look up <ruby>熟語<rt>じゅくご</rt></ruby> by their readings in a dictionary
 insead of having to rely on radical search or having to draw the kanji (see
-also: [[How-do-I-look-up-the-meaning-of-this-kanji]]).
+also: [[language-learning#how-do-i-look-up-the-meaning-of-this-kanji|How Do I Look Up the Meaning of This Kanji]]).
 
 Depending on the publisher and the author's own preferences, books will
 sometimes follow certain established rules on where to apply furigana:
@@ -1359,7 +1359,7 @@ sometimes follow certain established rules on where to apply furigana:
  * On a lot of young reader's manga like <ruby>少年<rt>しょうねん</rt></ruby> or
   <ruby>少女<rt>しょうじょ</rt></ruby> genres, you will see furigana on every
    single kanji word;
- * In some light novels or books, publishers will require all [[Ateji]] words to
+ * In some light novels or books, publishers will require all [[language-learning#ateji|Ateji]] words to
    have their furigana reading clearly displayed;
  * Words that use non-<ruby>常用漢字<rt>じょうようかんじ</rt></ruby> (kanji
    outside of those every adult is expected to know) will often have furigana;
@@ -1367,7 +1367,7 @@ sometimes follow certain established rules on where to apply furigana:
 
 Another very common practice of using furigana is that of adding inconsistent or
 unusual readings on top of certain kanji used as <ruby>義訓<rt>ぎくん</rt></ruby>
-for poetic or literary purposes. See: [[Gikun]]
+for poetic or literary purposes. See: [[language-learning#gikun|Gikun]]
 
 ---
 
@@ -1387,7 +1387,7 @@ native material (even simple manga) it's very likely that you've come across it
 yourself.
 
 The fundamental idea behind <ruby>義訓<rt>ぎくん</rt></ruby> is to write words
-with an incorrect kanji and annotate them using [[Furigana]] to instruct the
+with an incorrect kanji and annotate them using [[language-learning#furigana|Furigana]] to instruct the
 reader of the *actual* reading of the word that was supposed to be in their
 place instead.
 
@@ -1472,13 +1472,13 @@ that I come across or that people send me.
 
 <div class="article-header">
 <h1>Ateji</h1>
-<p>If only the topic of kanji readings could stop at [[Onyomi-and-Kunyomi]], kanji</p>
+<p>If only the topic of kanji readings could stop at [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]], kanji</p>
 </div>
 
 
 # Ateji
 
-If only the topic of kanji readings could stop at [[Onyomi-and-Kunyomi]], kanji
+If only the topic of kanji readings could stop at [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]], kanji
 would be much simpler to learn. In reality, however, Japanese words have a lot
 of exception classes and phonetic situations that don’t conform to a
 one-size-fits-all rule.
@@ -1533,7 +1533,7 @@ katakana alone).
 When it comes to these <ruby>熟字訓<rt>じゅくじくん</rt></ruby> the only way to
 know how they are pronounced is to look them up in a dictionary, because
 the kanji themselves will not give you any certainty on their reading.
-(See also: [[How-do-I-read-this-word]])
+(See also: [[language-learning#how-do-i-read-this-word|How Do I Read This Word]])
 
 <!-- TODO: Write about publisher rules and furigana, etc -->
 
@@ -1552,7 +1552,7 @@ The topics of だ and its variant です are a frequent pet-peeve of mine, as th
 seem to often be overly simplified or poorly explained for English speaking
 audiences not familiar with Japanese structure and syntax. As a consequence,
 textbooks usually lie or omit a lot of important details that are key to making
-[[Japanese]] sentences easy to build and understand.
+[[language-learning#japanese|Japanese]] sentences easy to build and understand.
 This article is my attempt at clarifying things, while keeping them simple
 enough that even absolute beginners should be able to follow intuitively.
 
@@ -1641,7 +1641,7 @@ ending sentences and you can safely ignore them for now.
 From this section onwards, I assume that the reader has a more adequate mastery
 of the fundamentals of the Japanese language. Examples and explanations will
 refer to grammatical rules that, if unclear, should be looked up by the reader
-as an exercise of independence ([[Unlocking-Japanese-Tricks]]).
+as an exercise of independence ([[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]]).
 
 ### What about です？
 
@@ -2057,7 +2057,7 @@ audio recordings (like you would for any other non-pitch language).
 # Mass Immersion Approach
 
 **NOTE:** This page is kept for historical purposes. "MIA" split some time ago
-into [[Refold]] and [[Migaku]].
+into [[language-learning#refold|Refold]] and [[language-learning#migaku|Migaku]].
 
 Quoting directly from [their website](https://massimmersionapproach.com/about/):
 
@@ -2076,7 +2076,7 @@ Quoting directly from [their website](https://massimmersionapproach.com/about/):
 They have a lot of interesting and somewhat useful resources, but towards the
 end of 2020 their two creators (Matt and Yoga) decided to split up the
 partnership due to internal problems. The two new projects for each of them
-respectively are [[Refold]] and [[Migaku]].
+respectively are [[language-learning#refold|Refold]] and [[language-learning#migaku|Migaku]].
 
 ---
 
@@ -2096,7 +2096,7 @@ some real vocal fans with a cult of personality around Matt himself, but still
 they have some solid ideas that they try to panhandle you as this new
 groundbreaking method.
 
-Nonetheless, there's some good resources for [[Anki]] and similar tools
+Nonetheless, there's some good resources for [[language-learning#anki|Anki]] and similar tools
 that might be worth checking out.
 
 ---
@@ -2270,7 +2270,7 @@ reinforce certain collocations and words used by a certain author as we delve
 deeper into their work.
 
 It is impossible to gain mastery of word usage by just seeing new words once,
-even if we make extensive use of [[Anki]]. However, by sticking to the same
+even if we make extensive use of [[language-learning#anki|Anki]]. However, by sticking to the same
 author or genre, there is a greater chance of coming across the same words being
 used in similar contexts so we can build a stronger intuition for them[6].
 
@@ -2343,11 +2343,11 @@ trying to learn. It’s rather counter-intuitive.
 While in general I can’t tell you what you should be reading, I list a few manga
 and light novels in [[e50a5ae3]] that I think are a good entry point for a
 beginner. I have also written down a couple of practical tips and tools that can
-facilitate your reading experience here: [[Practical-Tips-to-Facilitate-Early-Reading]],
-especially if you have a hard time dealing with stuff like [[Kanji]].
+facilitate your reading experience here: [[language-learning#practical-tips-to-facilitate-early-reading|Practical Tips to Facilitate Early Reading]],
+especially if you have a hard time dealing with stuff like [[language-learning#kanji|Kanji]].
 
 If you feel lost about what your study routine should look like, on the other
-hand, I recommend giving [[58465ab9]] a read, and bookmark the [[Unlocking-Japanese-Tricks]]
+hand, I recommend giving [[58465ab9|Japanese Learning Loop]] a read, and bookmark the [[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]]
 page to consult whenever you get stuck in your immersion.
 
 ## References
@@ -2377,8 +2377,8 @@ language.
 However, especially when it comes to Japanese, there are quite a few obstacles
 in the path of a beginner that may seem insurmountable. Unlike most other
 languages, with Japanese you not only have to contend with grammar and
-vocabulary, you need to think about [[Kanji]] and their phonetic
-oddities/readings as well (See: [[Onyomi-and-Kunyomi]]).
+vocabulary, you need to think about [[language-learning#kanji|Kanji]] and their phonetic
+oddities/readings as well (See: [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]]).
 
 A tip I like to give beginners that are trying to get into reading is that you
 should **not worry about kanji**. In the past, kanji were a very big obstacle
@@ -2401,7 +2401,7 @@ extension that every single Japanese learner should install. Let me repeat:
 By just moving your mouse over a word you don’t know, it will tell you the
 reading, pronunciation, meaning, translation, and a bunch of other details about
 it. By clicking a button you will also be able to export not only the word but
-**the entire sentence** into your [[Anki]] deck if you have set it up using
+**the entire sentence** into your [[language-learning#anki|Anki]] deck if you have set it up using
 ankiconnect.
 
 There is a great explanation and set up guide on [this page](https://learnjapanese.moe/yomichan/)
@@ -2432,7 +2432,7 @@ keep track of.
 
 I like using the highlight system to keep count of new words I learn as I read,
 and then use a tool like [this one](https://github.com/kanjieater/Smart-Japanese-Kindle-Highlights)
-to bulk import all my highlights automatically into [[Anki]] cards for
+to bulk import all my highlights automatically into [[language-learning#anki|Anki]] cards for
 review later.
 
 ## Textractor and Game2Text
@@ -2458,7 +2458,7 @@ balloons, but the amount of stuff you can read from them is very limited, often
 has typos, or gets taken down as it’s copyrighted material.
 
 On the other hand, a lot of manga aimed towards younger audiences (which makes
-it great for beginners too!) has [[Furigana]] for every single kanji. This makes
+it great for beginners too!) has [[language-learning#furigana|Furigana]] for every single kanji. This makes
 it easier to read and look up words, and you will not need any fancy tools to do
 so. If you can buy physical manga as well, it can be quite nice to read on the
 couch away from all technology and distractions. Just you, your manga, and your
@@ -2485,7 +2485,7 @@ will not impact the contextual understanding of the situation but might set you
 back if you become obsessed in achieving complete coverage of known words all
 the time.
 
-[[Refold]] calls this ["Tolerate the Ambiguity"](https://refold.la/roadmap/stage-0/b/tolerate-ambiguity)
+[[language-learning#refold|Refold]] calls this ["Tolerate the Ambiguity"](https://refold.la/roadmap/stage-0/b/tolerate-ambiguity)
 and provides a bit of a summary explanation, however I know it's not easy to get
 into this mindset and to just "let go" and move on when faced with unknowns,
 especially for people who are used to analyzing every single word as they show
@@ -2503,7 +2503,7 @@ The first thing we need to understand is that words have different weights and
 "levels" in a sentence. As a language learner you want to cast a net as wide as
 possible and try to [get through as many meaningful sentences as you can](https://jacobalbano.com/2020/06/13/read-fast-and-skip-things/)
 without being bogged down by annoying unknowns. I have already talked about
-content words vs function words in [[Optimal-Reading-Immersion---Narrow-Reading]].
+content words vs function words in [[language-learning#optimal-reading-immersion---narrow-reading|Optimal Reading Immersion - Narrow Reading]].
 
 Beyond those, there are also a few more [levels of comprehension](https://refold.la/roadmap/stage-2/a/levels-of-comprehension)
 you can get from a sentence and after a certain threshold it's okay to move on
@@ -2671,7 +2671,7 @@ order to help you memorize them.
 As long as you keep using Anki every day, you will be able to remember the
 information that is being shown to you.
 
-Most people among the [[Japanese]] learning community use it to learn various
+Most people among the [[language-learning#japanese|Japanese]] learning community use it to learn various
 things, mostly vocabulary and kanji (although it can also be used to train
 listening comprehension or practice on grammar points as well).
 
@@ -2724,7 +2724,7 @@ Random Examples:
 
 [Migaku](https://www.patreon.com/Migaku) is the new project from Yoga.
 
-Some of their toolings are still really solid and useful, the [[Anki]] card
+Some of their toolings are still really solid and useful, the [[language-learning#anki|Anki]] card
 exporter and mining system are probably one of my favorite to use.
 
 I don't know about their pathreon itself, but it's definitely worth checking out
@@ -2770,7 +2770,7 @@ page.
 
 ## Note on proficiency
 
-This is a personal note, but it's pretty commonly echoed among the [[Japanese]]
+This is a personal note, but it's pretty commonly echoed among the [[language-learning#japanese|Japanese]]
 learning community so it's nothing too controversial.
 
 A big criticism of the JLPT is the fact that it does not test any actual
@@ -2934,7 +2934,7 @@ practice will not magically make you able to output.
 **You need to practice output to become good at outputting**.
 
 I recommend any learner who wants to integrate the output tips on this page to
-at least have reached the second step of the [[58465ab9]]. Ideally, you should
+at least have reached the second step of the [[58465ab9|Japanese Learning Loop]]. Ideally, you should
 be at the point where you can consume some Japanese media somewhat comfortably
 (within your area of interest), and regularly do so in your everyday life. If
 you are at a point where you can read a random Japanese sentence and go
@@ -3081,7 +3081,7 @@ it first.
 
 Practicing output will show you your weaknesses in the language. This is what I
 call “noticing”. Output practice itself is a self-feeding loop not unlike the
-[[58465ab9]] and will look something like this:
+[[58465ab9|Japanese Learning Loop]] and will look something like this:
 
 [![Noticing graph](/static/noticing.svg)](/static/noticing.svg)
 
@@ -3110,7 +3110,7 @@ level because that would give you the best example of natural conversational
 language. This said, practicing with other learners is not necessarily a bad
 thing either.
 
-Past the very initial stages of learning (step 1 of [[58465ab9]]), every person
+Past the very initial stages of learning (step 1 of [[58465ab9|Japanese Learning Loop]]), every person
 is fundamentally different and language learning itself is not a straight line.
 Someone at approximately your same level of Japanese might be much better than
 you at some specific thing, and you might be much better than them at some other
@@ -3123,7 +3123,7 @@ learners and even after years of doing so their Japanese still feels very
 unnatural (this might not be the only reason, but I bet it does not help).
 
 A few places you can find people to talk to:
- * Language exchange discord servers (like [[EJLX]])
+ * Language exchange discord servers (like [[language-learning#ejlx|EJLX]])
  * Hire a conversational partner/tutor on italki.com
  * Language exchange apps like HelloTalk or Tandem
  * Online platforms and communities around your hobbies (If you like games,
@@ -3372,13 +3372,13 @@ function of your output as well.
 
 <div class="article-header">
 <h1>Unlocking Japanese: Tricks</h1>
-<p>As described in [[58465ab9]], achieving learning independence is fundamental to</p>
+<p>As described in [[58465ab9|Japanese Learning Loop]], achieving learning independence is fundamental to</p>
 </div>
 
 
 # Unlocking Japanese: Tricks
 
-As described in [[58465ab9]], achieving learning independence is fundamental to
+As described in [[58465ab9|Japanese Learning Loop]], achieving learning independence is fundamental to
 unlocking language acquisition.
 
 The most important thing is being able to navigate the vast amount of resources
@@ -3387,19 +3387,19 @@ available to you on the Internet without getting lost or incorrect advice.
 These are the steps that I follow whenever I get stumped by something new in
 Japanese that I cannot understand.
 
- - [[What-does-this-particle-or-grammar-structure-mean]]
- - [[What-does-this-word-mean]]
- - [[How-do-I-look-up-the-meaning-of-this-kanji]]
- - [[What-words-or-particles-should-I-use-with-this-verb]]
- - [[What-is-the-difference-between-these-two-words]]
- - [[What-is-the-difference-between-this-word-written-with-these-two-different-kanji]]
- - [[What-is-the-counter-for-this-word]]
- - [[How-do-I-pronounce-this-word]]
- - [[How-do-I-read-this-word]]
- - [[What-does-this-contraction-mean]]
- - [[How-do-I-read-this-math-expression-in-Japanese]]
+ - [[language-learning#what-does-this-particle-or-grammar-structure-mean|What Does This Particle or Grammar Structure Mean]]
+ - [[language-learning#what-does-this-word-mean|What Does This Word Mean]]
+ - [[language-learning#how-do-i-look-up-the-meaning-of-this-kanji|How Do I Look Up the Meaning of This Kanji]]
+ - [[language-learning#what-words-or-particles-should-i-use-with-this-verb|What Words or Particles Should I Use With This Verb]]
+ - [[language-learning#what-is-the-difference-between-these-two-words|What Is the Difference Between These Two Words]]
+ - [[language-learning#what-is-the-difference-between-this-word-written-with-these-two-different-kanji|What Is the Difference Between This Word Written With These Two Different Kanji]]
+ - [[language-learning#what-is-the-counter-for-this-word|What Is the Counter for This Word]]
+ - [[language-learning#how-do-i-pronounce-this-word|How Do I Pronounce This Word]]
+ - [[language-learning#how-do-i-read-this-word|How Do I Read This Word]]
+ - [[language-learning#what-does-this-contraction-mean|What Does This Contraction Mean]]
+ - [[language-learning#how-do-i-read-this-math-expression-in-japanese|How Do I Read This Math Expression in Japanese]]
 
-Also I recommend reading [[Practical-Tips-to-Facilitate-Early-Reading]] if you
+Also I recommend reading [[language-learning#practical-tips-to-facilitate-early-reading|Practical Tips to Facilitate Early Reading]] if you
 are looking for more general practical tooling to help you read.
 
 ---
@@ -3418,14 +3418,14 @@ the time. In most cases, the answer is always the same and it involves a quick
 link to a page with (what I consider) the best explanation currently available.
 
 If what you're looking for is not here, consider also reading the
-[[Unlocking-Japanese-Tricks]] page.
+[[language-learning#unlocking-japanese-tricks|Unlocking Japanese Tricks]] page.
 
 ## General Questions
 
 ### How do I learn Japanese?
 
  * See [this page](https://github.com/EngJpDiscordExchange/Awesome-Japanese/blob/master/readme.md#beginner-guide)
- * Also [[9f88358f]] and [[58465ab9]].
+ * Also [[9f88358f|Japanese Resources]] and [[58465ab9|Japanese Learning Loop]].
 
 ### How do I learn hiragana and katakana?
 
@@ -3437,7 +3437,7 @@ If what you're looking for is not here, consider also reading the
  * Yes and yes. They are some of the most common learning resources, you can't
    go wrong with them. Don't worry too much about finding what is best, just
    start learning and stick to it.
- * See also: [[9f88358f]]
+ * See also: [[9f88358f|Japanese Resources]]
 
 ### What is the difference between は and が?
 
@@ -3452,7 +3452,7 @@ If what you're looking for is not here, consider also reading the
 ### What are onyomi and kunyomi? Why is this kanji read this way?
 
  * Read [this tofugu article](https://www.tofugu.com/japanese/onyomi-kunyomi/)
- * Also see [[Onyomi-and-Kunyomi]]
+ * Also see [[language-learning#onyomi-and-kunyomi|Onyomi and Kunyomi]]
 
 
 ## Grammar Questions
@@ -3538,23 +3538,23 @@ me go "huh, interesting".
 
 ---
 
- * [[Use-of-futari-not-for-people]]
- * [[Use-of-sugoi-as-an-adverb]]
- * [[Use-of-shiru-for-the-location-of-things]]
- * [[ta-wa-ii-ga]]
- * [[Using-to-to-leave-something-implied]]
- * [[E-as-ii]]
- * [[towa-as-with-topic-vs-to-as-with]]
- * [[Imperative-form-of-wakaru]]
- * [[danoni-instead-of-nanoni]]
- * [[Using-2-superscript-to-duplicate-a-word]]
- * [[yorosiku-as-just-like]]
- * [[iittekotonisiyo]]
- * [[Omitting-koto-in-a-list-of-actions]]
- * [[Using-tachi-as-a-generic-pluralizer]]
- * [[wo-puriizu-instead-of-wo-kudasai]]
- * [[ku-adjective-plus-potential-form-of-aru]]
- * [[kiitekureyo]]
+ * [[Use-of-futari-not-for-people|Use of Futari Not for People]]
+ * [[Use-of-sugoi-as-an-adverb|Use of Sugoi as an Adverb]]
+ * [[Use-of-shiru-for-the-location-of-things|Use of Shiru for the Location of Things]]
+ * [[ta-wa-ii-ga|ta wa ii ga]]
+ * [[Using-to-to-leave-something-implied|Using to to Leave Something Implied]]
+ * [[E-as-ii|E as ii]]
+ * [[towa-as-with-topic-vs-to-as-with|towa as With Topic vs to as With]]
+ * [[Imperative-form-of-wakaru|Imperative Form of Wakaru]]
+ * [[danoni-instead-of-nanoni|danoni Instead of nanoni]]
+ * [[Using-2-superscript-to-duplicate-a-word|Using 2 Superscript to Duplicate a Word]]
+ * [[yorosiku-as-just-like|yorosiku as Just Like]]
+ * [[iittekotonisiyo|iittekotonisiyo]]
+ * [[Omitting-koto-in-a-list-of-actions|Omitting koto in a List of Actions]]
+ * [[Using-tachi-as-a-generic-pluralizer|Using tachi as a Generic Pluralizer]]
+ * [[wo-puriizu-instead-of-wo-kudasai|wo puriizu Instead of wo kudasai]]
+ * [[ku-adjective-plus-potential-form-of-aru|ku-adjective Plus Potential Form of aru]]
+ * [[kiitekureyo|kiitekureyo]]
 
 ---
 

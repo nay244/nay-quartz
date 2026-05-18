@@ -13,17 +13,17 @@ This place will mostly be a dump of my thoughts and opinions on the courses requ
 
 ## List of Courses
 
- * [[D204]]
- * [[D205]]
- * [[D206]]
- * [[D207]]
- * [[D208]]
- * [[D209]]
- * [[D210]]
- * [[D211]]
- * [[D212]]
- * [[D213]]
- * [[D214]]
+ * [[wgu#d204---the-data-analytics-journey|D204]]
+ * [[wgu#d205---data-acquisition|D205]]
+ * [[wgu#d206---data-cleaning|D206]]
+ * [[wgu#d207---exploratory-data-analysis|D207]]
+ * [[wgu#d208---predictive-modeling|D208]]
+ * [[wgu#d209---data-mining-i|D209]]
+ * [[wgu#d210---representation-and-reporting|D210]]
+ * [[wgu#d211---advanced-data-acquisition|D211]]
+ * [[wgu#d212---data-mining-ii|D212]]
+ * [[wgu#d213---advanced-data-analytics|D213]]
+ * [[wgu#d214---data-analytics-graduate-capstone|D214]]
  
   
 ### NOTE
@@ -126,7 +126,7 @@ The course introduces hypothesis testing, focusing on application for parametric
 ## Course Analysis
 For this course, I ignored most of the class materials, except for the Data Camp unit on Performing Experiments in Python and was helpful in showing me how to execute various tests in Python.
 
-The project involved using one of two datasets from a previous course, [[D206]], which were only marginally cleaner. I reused my previous cleaning code, which turned out to be unnecessary since the data I needed was unchanged. My research question and hypotheses from D206 were also reused.
+The project involved using one of two datasets from a previous course, [[wgu#d206---data-cleaning|D206]], which were only marginally cleaner. I reused my previous cleaning code, which turned out to be unnecessary since the data I needed was unchanged. My research question and hypotheses from D206 were also reused.
 
 After a deep dive into Dr. Sewell's webinar videos, which were a bit disorganized, I found the guidance I needed on chi-square tests of independence in Python. This allowed me to correctly analyze the data, although I had to resubmit the project again due to a citation oversight.
 
@@ -185,7 +185,7 @@ In this course, learners implement supervised models—specifically classificati
 The course provides frameworks for assessing models' sensitivity and specificity.
 
 ## Course Analysis
-D209 felt like a continuation of [[D208]], focusing on more predictive modeling with different techniques. Thanks to the helpful DataCamp videos, it seemed easier than D208.
+D209 felt like a continuation of [[wgu#d208---predictive-modeling|D208]], focusing on more predictive modeling with different techniques. Thanks to the helpful DataCamp videos, it seemed easier than D208.
 
 The first project in D209 had us apply K-Nearest Neighbors (KNN) classification or Naive Bayes for predictive modeling. The second project required a similar approach but with decision trees, random forests, or advanced regression methods. Unlike other classes, D209 didn't dictate the use of different data types for each task, allowing for consistency across projects.
 
@@ -246,9 +246,9 @@ Advanced Data Acquisition enhances theoretical and SQL skills in furthering the 
 This course covers advanced SQL operations, aggregating data, and acquiring data from various sources in support of core organizational needs.
 
 ## Course Analysis
-This course operates in tandem with [[D210]], utilizing Tableau Desktop to create dashboards for the churn/medical datasets, supplemented by an external dataset you select. The primary distinction in this course is the method of data importation; instead of a single CSV file, you're tasked with uploading your data into a PostgreSQL database via a virtual machine using pgAdmin, then connecting Tableau to that database. This course proved to be more intricate than D210, largely due to the virtual machine work and several ambiguously written rubric components. Ambiguity in rubrics has been a recurring theme in this program, but this course exacerbated that issue.
+This course operates in tandem with [[wgu#d210---representation-and-reporting|D210]], utilizing Tableau Desktop to create dashboards for the churn/medical datasets, supplemented by an external dataset you select. The primary distinction in this course is the method of data importation; instead of a single CSV file, you're tasked with uploading your data into a PostgreSQL database via a virtual machine using pgAdmin, then connecting Tableau to that database. This course proved to be more intricate than D210, largely due to the virtual machine work and several ambiguously written rubric components. Ambiguity in rubrics has been a recurring theme in this program, but this course exacerbated that issue.
 
-For the external dataset, I continued with the Telco customer churn data I mentioned in D210. I bypassed the DataCamp courses, feeling confident in my pgAdmin skills from a previous course [[D205]] and my familiarity with Tableau from D210. The performance assessment in this course doesn't necessitate a complete Story in Tableau as D210 did, but rather a few dashboards. I simply replicated two dashboards from my D210 Story, using the same merged dataset I had compiled in D210.
+For the external dataset, I continued with the Telco customer churn data I mentioned in D210. I bypassed the DataCamp courses, feeling confident in my pgAdmin skills from a previous course [[wgu#d205---data-acquisition|D205]] and my familiarity with Tableau from D210. The performance assessment in this course doesn't necessitate a complete Story in Tableau as D210 did, but rather a few dashboards. I simply replicated two dashboards from my D210 Story, using the same merged dataset I had compiled in D210.
 
 ## Final Thoughts
 
