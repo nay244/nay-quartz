@@ -1,11 +1,16 @@
 ---
-date: 2023-11-19T23:41
-tags:
-  - projects
-  - ML
-  - python
-  - timeline
+title: Projects
 ---
+# Projects
+
+A collection of personal and professional projects.
+
+---
+
+<div class="article-header">
+<h1>MelodyCraft</h1>
+<p>Autonomous pipeline to create song covers or voice-overs of any Youtube video using RVC v2 trained AI voices.</p>
+</div>
 
 # MelodyCraft AI
 

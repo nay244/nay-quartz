@@ -48,8 +48,8 @@ export const CARDS = {
       </div>
     </a>
   ),
-  "WGU": (
-    <a href={"/WGU"}>
+  "wgu": (
+    <a href={"/wgu"}>
       <div class="card card-6">
         <p class="card-title">WGU</p>
         <p class="card-subhead">Node 6</p>
@@ -65,7 +65,7 @@ const CARD_DEFS = [
   { slug: "career",            title: "Career",            node: "Node 3", n: 3 },
   { slug: "projects",          title: "Projects",          node: "Node 4", n: 4 },
   { slug: "language-learning", title: "Language Learning", node: "Node 5", n: 5 },
-  { slug: "WGU",               title: "WGU",               node: "Node 6", n: 6 },
+  { slug: "wgu",               title: "WGU",               node: "Node 6", n: 6 },
 ]
 
 export default (() => {
@@ -76,7 +76,7 @@ export default (() => {
           <p class="landing-header">Welcome to My Personal Repository</p>
           <p class="page-subhead">
             Quick Links •{" "}
-            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+            <a href="https://www.linkedin.com/in/naaay-naing/" target="_blank">
               LinkedIn
             </a>{" "}
             •{" "}
