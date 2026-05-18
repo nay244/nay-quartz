@@ -68,22 +68,24 @@ const CARD_DEFS = [
   { slug: "wgu",               title: "WGU",               node: "Node 6", n: 6 },
 ]
 
+const MARQUEE_TEXT =
+  "the digital garden · the knowledge nook · the learning lab · the idea nursery · the thought grove · the memory archive · the discovery den · the wisdom well · the reading room · the curious corner · "
+
 export default (() => {
   function LandingComponent() {
+    const marqueeContent = Array(4).fill(MARQUEE_TEXT).join("")
     return (
       <div>
         <div class="content-container">
+
+          {/* Terminal hero prompt */}
+          <div class="hero-prompt">
+            <span class="prompt-symbol">~/garden $</span>
+            &nbsp;whoami
+            <span class="prompt-cursor" />
+          </div>
+
           <p class="landing-header">Welcome to My Personal Repository</p>
-          <p class="page-subhead">
-            Quick Links •{" "}
-            <a href="https://www.linkedin.com/in/naaay-naing/" target="_blank">
-              LinkedIn
-            </a>{" "}
-            •{" "}
-            <a href="https://github.com/nay244" target="_blank">
-              GitHub
-            </a>
-          </p>
 
           <div class="landing-intro">
             <p>
@@ -99,8 +101,8 @@ export default (() => {
                 <div class="callout-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="16"
+                    height="16"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -136,6 +138,17 @@ export default (() => {
             </div>
           </div>
 
+          <p class="page-subhead">
+            Quick Links •{" "}
+            <a href="https://www.linkedin.com/in/naaay-naing/" target="_blank">
+              LinkedIn
+            </a>{" "}
+            •{" "}
+            <a href="https://github.com/nay244" target="_blank">
+              GitHub
+            </a>
+          </p>
+
           <div class="issue-container">
             {CARD_DEFS.map(({ slug, title, node, n }) => (
               <a href={`./${slug}`}>
@@ -147,6 +160,12 @@ export default (() => {
               </a>
             ))}
           </div>
+
+        </div>
+
+        {/* Bottom marquee strip */}
+        <div class="marquee marquee-bottom">
+          <p>{marqueeContent}</p>
         </div>
       </div>
     )

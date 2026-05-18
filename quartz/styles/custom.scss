@@ -1,249 +1,217 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+:root {
+  --paper:   #1E1A12;
+  --paper-2: #2A2519;
+  --paper-3: #383021;
+  --ink:     #EDE5CB;
+  --ink-2:   #A89D7E;
+  --ink-3:   #645B41;
+  --terra:   #E89265;
+  --indigo:  #A99CF5;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
 body {
-  background-image: url("./static/bg.png") !important;
+  background-color: var(--paper);
+  /* 32px grid-paper texture */
+  background-image:
+    linear-gradient(rgba(237, 229, 203, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 229, 203, 0.055) 1px, transparent 1px);
+  background-size: 32px 32px;
   margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-@font-face {
-  font-family: "Tiempos";
-  src: url("./static/tiempos-light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* HEADER AT TOP OF WEBSITE */
+/* ─── Marquee ────────────────────────────────────────────────────────────── */
 .marquee {
-  background-color: black;
+  background-color: var(--paper-2);
+  border-bottom: 1px solid var(--ink-3);
   overflow: hidden;
   width: 100%;
-  font-family: monospace;
+  font-family: "IBM Plex Mono", monospace;
   white-space: nowrap;
-  height: 40px;
+  height: 34px;
+  display: flex;
+  align-items: center;
 }
 
 .marquee p {
-  color: white;
-  font-weight: 700;
-  animation: loopText 15s infinite linear;
+  color: var(--ink-3);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+  animation: loopText 40s infinite linear;
   line-height: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.marquee-bottom {
+  border-bottom: none;
+  border-top: 1px solid var(--ink-3);
 }
 
 @keyframes loopText {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-25%);
-  }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-25%); }
 }
 
-/* HEADER AT TOP OF WEBSITE */
+/* ─── Content container ─────────────────────────────────────────────────── */
 .content-container {
   width: 70%;
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 
+/* ─── Article headers ───────────────────────────────────────────────────── */
 .article-header {
-  border-radius: 5px;
-  margin-top: 50px;
-  padding: 25px;
-  border: 1px solid #5687d1;
-  background: #6096e6;
+  border-radius: 0;
+  margin-top: 40px;
+  padding: 20px 24px;
+  border: 1px solid var(--ink-3);
+  border-left: 3px solid var(--terra);
+  background: var(--paper-2);
+  box-shadow: 3px 3px 0 0 var(--ink-3);
 
   h1 {
-    color: #f9f5e9;
-    padding: 0px;
+    color: var(--ink);
+    font-family: "Source Serif 4", serif;
+    padding: 0;
     margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.3;
   }
 
   p {
-    color: #f9f5e9;
+    color: var(--ink-2);
     padding: 0;
-    padding-top: 5px;
+    padding-top: 6px;
     margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
   }
 }
 
-body[data-slug="getting-started"] .article-header {
-  border: #949c61;
-  background: #9ca665;
-}
+/* Per-page accent color on the left border */
+body[data-slug="about-me"]          .article-header { border-left-color: #649aea; }
+body[data-slug="knowledge-base"]    .article-header { border-left-color: #aab172; }
+body[data-slug="career"]            .article-header { border-left-color: var(--terra); }
+body[data-slug="projects"]          .article-header { border-left-color: #eb856f; }
+body[data-slug="language-learning"] .article-header { border-left-color: #ad7e95; }
+body[data-slug="wgu"]               .article-header { border-left-color: #e18fa7; }
 
-body[data-slug="growing-people"] .article-header {
-  border: #ad7018;
-  background: #bd7c18;
-}
-
-body[data-slug="superboosting-ideas"] .article-header {
-  border: #9f7389;
-  background: #ac7d94;
-}
-
-body[data-slug="maintenance"] .article-header {
-  border: #d37662;
-  background: #eb846d;
-}
-
-body[data-slug="demo-days"] .article-header {
-  border: #e18fa715;
-  background: #e18fa7;
-}
+/* ─── Navigation ────────────────────────────────────────────────────────── */
 .navigation-container {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
+  margin-top: 32px;
 }
 
-body[data-slug="basics"] .navigation-container {
-  display: display;
-  justify-content: flex-end;
-}
-
-body[data-slug="demo-days"] .navigation-container {
-  display: display;
-  justify-content: flex-start;
-}
+body[data-slug="basics"]    .navigation-container { justify-content: flex-end; }
+body[data-slug="demo-days"] .navigation-container { justify-content: flex-start; }
 
 a.navigation-button {
-  border-radius: 5px;
-  padding: 15px;
-  border: 1px solid #5687d1;
-  background: #6096e6;
-  width: 17%;
+  border: 1px solid var(--ink-3);
+  background: var(--paper-2);
+  box-shadow: 2px 2px 0 0 var(--ink-3);
+  border-radius: 0;
+  padding: 14px 20px;
+  width: 18%;
   text-align: center;
-  transition: all 0.3s;
-  transform: scale(1);
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    transform: scale(1.02);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 0 var(--terra);
+    border-color: var(--terra);
   }
 
   p {
-    color: #f9f5e9;
+    color: var(--ink);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     padding: 0;
     margin: 0;
   }
 }
 
-body[data-slug="getting-started"] a.navigation-button {
-  border: #949c61;
-  background: #9ca665;
-}
+body[data-slug="about-me"]          a.navigation-button:hover { border-color: #649aea;  box-shadow: 3px 3px 0 0 #649aea;  }
+body[data-slug="knowledge-base"]    a.navigation-button:hover { border-color: #aab172;  box-shadow: 3px 3px 0 0 #aab172;  }
+body[data-slug="language-learning"] a.navigation-button:hover { border-color: #ad7e95;  box-shadow: 3px 3px 0 0 #ad7e95;  }
+body[data-slug="projects"]          a.navigation-button:hover { border-color: #eb856f;  box-shadow: 3px 3px 0 0 #eb856f;  }
+body[data-slug="wgu"]               a.navigation-button:hover { border-color: #e18fa7;  box-shadow: 3px 3px 0 0 #e18fa7;  }
 
-body[data-slug="growing-people"] a.navigation-button {
-  border: #ad7018;
-  background: #bd7c18;
-}
-
-body[data-slug="superboosting-ideas"] a.navigation-button {
-  border: #9f7389;
-  background: #ac7d94;
-}
-
-body[data-slug="maintenance"] a.navigation-button {
-  border: #d37662;
-  background: #eb846d;
-}
-
-body[data-slug="demo-days"] a.navigation-button {
-  border: #ab5e75;
-  background: #e18fa7;
-}
-
+/* ─── End message ───────────────────────────────────────────────────────── */
 .end-message {
-  border-radius: 5px;
-  padding: 25px;
-  color: #f9f5e9;
+  margin-top: 48px;
+  border: 1px solid var(--ink-3);
+  border-left: 3px solid var(--terra);
+  background: var(--paper-2);
+  box-shadow: 3px 3px 0 0 var(--ink-3);
+  padding: 24px;
+  color: var(--ink);
 
   h1 {
+    font-family: "Source Serif 4", serif;
+    color: var(--ink);
     padding: 0;
     margin: 0;
-    color: #f9f5e9;
+    font-size: 1.5rem;
   }
 
   p {
+    color: var(--ink-2);
     padding: 5px 0 0;
     margin: 0;
-    color: #f9f5e9;
   }
 
   .cta-button {
-    background-color: #f9f5e9;
-    border-radius: 5px;
-    border: none;
-    padding: 15px 32px;
     display: inline-block;
-    font-size: 16px;
     margin: 20px 0 0;
-    cursor: pointer;
+    padding: 12px 28px;
+    background: var(--terra);
+    color: var(--paper);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
     text-decoration: none;
-    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 0 var(--ink-3);
+    transition: transform 0.15s, box-shadow 0.15s;
+
+    &:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0 0 var(--ink);
+    }
   }
 
   @media screen and (max-width: 600px) {
     text-align: center;
-
-    .cta-button {
-      display: block;
-      margin: 20px auto 0;
-    }
+    .cta-button { display: block; margin: 20px auto 0; }
   }
 }
 
-body[data-slug="basics"] .end-message {
-  border: 1px solid #5687d1;
-  background: #6096e6;
+body[data-slug="about-me"]          .end-message { border-left-color: #649aea; }
+body[data-slug="knowledge-base"]    .end-message { border-left-color: #aab172; }
+body[data-slug="career"]            .end-message { border-left-color: var(--terra); }
+body[data-slug="projects"]          .end-message { border-left-color: #eb856f; }
+body[data-slug="language-learning"] .end-message { border-left-color: #ad7e95; }
+body[data-slug="wgu"]               .end-message { border-left-color: #e18fa7; }
 
-  .cta-button {
-    color: #6096e6;
-  }
-}
-
-body[data-slug="getting-started"] .end-message {
-  border: 1px solid #949c61;
-  background: #9ca665;
-
-  .cta-button {
-    color: #9ca665;
-  }
-}
-
-body[data-slug="growing-people"] .end-message {
-  border: 1px solid #ad7018;
-  background: #bd7c18;
-
-  .cta-button {
-    color: #bd7c18;
-  }
-}
-
-body[data-slug="superboosting-ideas"] .end-message {
-  border: 1px solid #9f7389;
-  background: #ac7d94;
-
-  .cta-button {
-    color: #ac7d94;
-  }
-}
-
-body[data-slug="maintenance"] .end-message {
-  border: 1px solid #d37662;
-  background: #eb846d;
-
-  .cta-button {
-    color: #eb846d;
-  }
-}
-
-body[data-slug="demo-days"] .end-message {
-  border: 1px solid #ab5e75;
-  background: #e18fa7;
-
-  .cta-button {
-    color: #e18fa7;
+@media screen and (max-width: 1200px) {
+  .content-container {
+    width: 95%;
+    margin: 0 auto;
   }
 }

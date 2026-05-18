@@ -126,12 +126,10 @@ export function renderPage(
       <body data-slug={slug}>
         <div class="marquee">
           <p>
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository
+            the digital garden · the knowledge nook · the learning lab · the idea nursery · the thought grove · the memory archive · the discovery den · the wisdom well · the reading room · the curious corner ·&nbsp;
+            the digital garden · the knowledge nook · the learning lab · the idea nursery · the thought grove · the memory archive · the discovery den · the wisdom well · the reading room · the curious corner ·&nbsp;
+            the digital garden · the knowledge nook · the learning lab · the idea nursery · the thought grove · the memory archive · the discovery den · the wisdom well · the reading room · the curious corner ·&nbsp;
+            the digital garden · the knowledge nook · the learning lab · the idea nursery · the thought grove · the memory archive · the discovery den · the wisdom well · the reading room · the curious corner
           </p>
         </div>
         {slug === "index" && <LandingComponent {...componentData} />}
