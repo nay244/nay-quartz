@@ -2,7 +2,6 @@ import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
-import Landing from "./Landing"
 import { JSResourceToScriptElement, StaticResources } from "../util/resources"
 import { FullSlug, RelativeURL, joinSegments } from "../util/path"
 import { visit } from "unist-util-visit"
@@ -118,47 +117,32 @@ export function renderPage(
     </div>
   )
 
-  const LandingComponent = Landing()
-
   const doc = (
     <html>
       <Head {...componentData} />
       <body data-slug={slug}>
-        <div class="marquee">
-          <p>
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository
-          </p>
-        </div>
-        {slug === "index" && <LandingComponent {...componentData} />}
-        {slug !== "index" && (
-          <div id="quartz-root" class="page">
-            <Body {...componentData}>
-              {LeftComponent}
-              <div class="center">
-                <div class="page-header">
-                  <Header {...componentData}>
-                    {header.map((HeaderComponent) => (
-                      <HeaderComponent {...componentData} />
-                    ))}
-                  </Header>
-                  <div class="popover-hint">
-                    {beforeBody.map((BodyComponent) => (
-                      <BodyComponent {...componentData} />
-                    ))}
-                  </div>
+        <div id="quartz-root" class="page">
+          <Body {...componentData}>
+            {LeftComponent}
+            <div class="center">
+              <div class="page-header">
+                <Header {...componentData}>
+                  {header.map((HeaderComponent) => (
+                    <HeaderComponent {...componentData} />
+                  ))}
+                </Header>
+                <div class="popover-hint">
+                  {beforeBody.map((BodyComponent) => (
+                    <BodyComponent {...componentData} />
+                  ))}
                 </div>
-                <Content {...componentData} />
               </div>
-              {RightComponent}
-            </Body>
-            <Footer {...componentData} />
-          </div>
-        )}
+              <Content {...componentData} />
+            </div>
+            {RightComponent}
+          </Body>
+          <Footer {...componentData} />
+        </div>
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
