@@ -6,7 +6,7 @@
   --paper-2: #12121a;
   --paper-3: #1c1c2e;
   --ink:     #e0e0e0;
-  --ink-2:   #6b7280;
+  --ink-2:   #e0e0e0;
   --ink-3:   #2a2a3a;
   --ink-grid: rgba(0, 255, 136, 0.05);
   --divider:  rgba(255, 255, 255, 0.06);
@@ -121,9 +121,9 @@ body[data-slug="index-maps"]        .article-header { border-left-color: #7fa89a
 
 /* Breadcrumbs */
 .breadcrumb-element a {
-  color: var(--ink-2);
+  color: var(--indigo);
   font-weight: 400;
-  &:hover { color: var(--ink) !important; }
+  &:hover { color: var(--indigo-soft) !important; }
 }
 
 /* Heading-level links (h1–h6) inherit heading ink, not link green */
