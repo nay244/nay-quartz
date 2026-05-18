@@ -9,7 +9,7 @@ export const CARDS = {
       <div class="card card-1">
         <p class="card-title">About Me</p>
         <p class="card-subhead">Node 01</p>
-        <img src="./static/node-about.svg" class="card-illustration-1" />
+        <img src="./static/node-01-about.png" class="card-illustration-1" />
       </div>
     </a>
   ),
@@ -18,7 +18,7 @@ export const CARDS = {
       <div class="card card-2">
         <p class="card-title">Career</p>
         <p class="card-subhead">Node 02</p>
-        <img src="./static/node-career.svg" class="card-illustration-2" />
+        <img src="./static/node-03-career.png" class="card-illustration-2" />
       </div>
     </a>
   ),
@@ -27,7 +27,7 @@ export const CARDS = {
       <div class="card card-3">
         <p class="card-title">Projects</p>
         <p class="card-subhead">Node 03</p>
-        <img src="./static/node-projects.svg" class="card-illustration-3" />
+        <img src="./static/node-04-projects.png" class="card-illustration-3" />
       </div>
     </a>
   ),
@@ -36,7 +36,7 @@ export const CARDS = {
       <div class="card card-4">
         <p class="card-title">Knowledge Base</p>
         <p class="card-subhead">Node 04</p>
-        <img src="./static/node-knowledge.svg" class="card-illustration-4" />
+        <img src="./static/node-02-knowledge.png" class="card-illustration-4" />
       </div>
     </a>
   ),
@@ -45,7 +45,7 @@ export const CARDS = {
       <div class="card card-5">
         <p class="card-title">Blog</p>
         <p class="card-subhead">Node 05</p>
-        <img src="./static/node-blog.svg" class="card-illustration-5" />
+        <img src="./static/node-blog.png" class="card-illustration-5" />
       </div>
     </a>
   ),
@@ -54,7 +54,7 @@ export const CARDS = {
       <div class="card card-6">
         <p class="card-title">Language Learning</p>
         <p class="card-subhead">Node 06</p>
-        <img src="./static/node-language.svg" class="card-illustration-6" />
+        <img src="./static/node-05-language.png" class="card-illustration-6" />
       </div>
     </a>
   ),
@@ -63,7 +63,7 @@ export const CARDS = {
       <div class="card card-7">
         <p class="card-title">WGU</p>
         <p class="card-subhead">Node 07</p>
-        <img src="./static/node-wgu.svg" class="card-illustration-7" />
+        <img src="./static/node-06-wgu.png" class="card-illustration-7" />
       </div>
     </a>
   ),
@@ -72,21 +72,21 @@ export const CARDS = {
       <div class="card card-8">
         <p class="card-title">Index & Maps</p>
         <p class="card-subhead">Node 08</p>
-        <img src="./static/node-index.svg" class="card-illustration-8" />
+        <img src="./static/node-index.png" class="card-illustration-8" />
       </div>
     </a>
   ),
 }
 
 const CARD_DEFS = [
-  { slug: "about-me",          title: "About Me",          node: "Node 01", n: 1, img: "node-about.svg"    },
-  { slug: "career",            title: "Career",             node: "Node 02", n: 2, img: "node-career.svg"   },
-  { slug: "projects",          title: "Projects",           node: "Node 03", n: 3, img: "node-projects.svg" },
-  { slug: "knowledge-base",    title: "Knowledge Base",     node: "Node 04", n: 4, img: "node-knowledge.svg"},
-  { slug: "blog",              title: "Blog",               node: "Node 05", n: 5, img: "node-blog.svg"     },
-  { slug: "language-learning", title: "Language Learning",  node: "Node 06", n: 6, img: "node-language.svg" },
-  { slug: "wgu",               title: "WGU",                node: "Node 07", n: 7, img: "node-wgu.svg"      },
-  { slug: "index-maps",        title: "Index & Maps",       node: "Node 08", n: 8, img: "node-index.svg"    },
+  { slug: "about-me",          title: "About Me",          node: "Node 01", n: 1, img: "node-01-about.png"    },
+  { slug: "career",            title: "Career",             node: "Node 02", n: 2, img: "node-03-career.png"   },
+  { slug: "projects",          title: "Projects",           node: "Node 03", n: 3, img: "node-04-projects.png" },
+  { slug: "knowledge-base",    title: "Knowledge Base",     node: "Node 04", n: 4, img: "node-02-knowledge.png"},
+  { slug: "blog",              title: "Blog",               node: "Node 05", n: 5, img: "node-blog.png"        },
+  { slug: "language-learning", title: "Language Learning",  node: "Node 06", n: 6, img: "node-05-language.png" },
+  { slug: "wgu",               title: "WGU",                node: "Node 07", n: 7, img: "node-06-wgu.png"      },
+  { slug: "index-maps",        title: "Index & Maps",       node: "Node 08", n: 8, img: "node-index.png"       },
 ]
 
 const MARQUEE_TEXT =
