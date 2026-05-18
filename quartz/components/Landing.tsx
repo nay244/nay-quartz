@@ -1,58 +1,58 @@
 import { QuartzComponentConstructor } from "./types"
 import landingStyle from "./styles/landing.scss"
 
-export const TOTAL_CARDS = 8
+export const TOTAL_CARDS = 6
 export const CARDS = {
-  basics: (
-    <a href={"/basics"}>
+  "about-me": (
+    <a href={"/about-me"}>
       <div class="card card-1">
-        <p class="card-title">The Basics</p>
-        <p class="card-subhead">Issue 001</p>
+        <p class="card-title">About Me</p>
+        <p class="card-subhead">Node 1</p>
         <img src="/static/1-illo.png" class="card-illustration-1" />
       </div>
     </a>
   ),
-  "getting-started": (
-    <a href={"/getting-started"}>
+  "knowledge-base": (
+    <a href={"/knowledge-base"}>
       <div class="card card-2">
-        <p class="card-title">Getting Started</p>
-        <p class="card-subhead">Issue 002</p>
+        <p class="card-title">Knowledge Base</p>
+        <p class="card-subhead">Node 2</p>
         <img src="/static/2-illo.png" class="card-illustration-2" />
       </div>
     </a>
   ),
-  "growing-people": (
-    <a href={"/growing-people"}>
+  "career": (
+    <a href={"/career"}>
       <div class="card card-3">
-        <p class="card-title">Growing People</p>
-        <p class="card-subhead">Issue 003</p>
+        <p class="card-title">Career</p>
+        <p class="card-subhead">Node 3</p>
         <img src="/static/3-illo.png" class="card-illustration-3" />
       </div>
     </a>
   ),
-  "superboosting-ideas": (
-    <a href={"/superboosting-ideas"}>
+  "projects": (
+    <a href={"/projects"}>
       <div class="card card-4">
-        <p class="card-title">Super- boosting Ideas</p>
-        <p class="card-subhead">Issue 004</p>
+        <p class="card-title">Projects</p>
+        <p class="card-subhead">Node 4</p>
         <img src="/static/4-illo.png" class="card-illustration-4" />
       </div>
     </a>
   ),
-  maintenance: (
-    <a href={"/maintenance"}>
+  "language-learning": (
+    <a href={"/language-learning"}>
       <div class="card card-5">
-        <p class="card-title">Maintenance</p>
-        <p class="card-subhead">Issue 005</p>
+        <p class="card-title">Language Learning</p>
+        <p class="card-subhead">Node 5</p>
         <img src="/static/5-illo.png" class="card-illustration-5" />
       </div>
     </a>
   ),
-  "demo-days": (
-    <a href={"/demo-days"}>
+  "WGU": (
+    <a href={"/WGU"}>
       <div class="card card-6">
-        <p class="card-title">Demo Days</p>
-        <p class="card-subhead">Issue 006</p>
+        <p class="card-title">WGU</p>
+        <p class="card-subhead">Node 6</p>
         <img src="/static/6-illo.png" class="card-illustration-6" />
       </div>
     </a>
@@ -60,12 +60,12 @@ export const CARDS = {
 }
 
 const CARD_DEFS = [
-  { slug: "basics",            title: "The Basics",        issue: "Issue 001", n: 1 },
-  { slug: "getting-started",  title: "Getting Started",   issue: "Issue 002", n: 2 },
-  { slug: "growing-people",   title: "Growing People",    issue: "Issue 003", n: 3 },
-  { slug: "superboosting-ideas", title: "Super- boosting Ideas", issue: "Issue 004", n: 4 },
-  { slug: "maintenance",      title: "Maintenance",       issue: "Issue 005", n: 5 },
-  { slug: "demo-days",        title: "Demo Days",         issue: "Issue 006", n: 6 },
+  { slug: "about-me",          title: "About Me",          node: "Node 1", n: 1 },
+  { slug: "knowledge-base",    title: "Knowledge Base",    node: "Node 2", n: 2 },
+  { slug: "career",            title: "Career",            node: "Node 3", n: 3 },
+  { slug: "projects",          title: "Projects",          node: "Node 4", n: 4 },
+  { slug: "language-learning", title: "Language Learning", node: "Node 5", n: 5 },
+  { slug: "WGU",               title: "WGU",               node: "Node 6", n: 6 },
 ]
 
 export default (() => {
@@ -73,40 +73,28 @@ export default (() => {
     return (
       <div>
         <div class="content-container">
-          <p class="landing-header">Welcome to Socratica</p>
+          <p class="landing-header">Welcome to My Personal Repository</p>
           <p class="page-subhead">
-            This is a guide •{" "}
-            <a href="https://www.socratica.info/" target="_blank">
-              Back to main site
+            Quick Links •{" "}
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+              LinkedIn
             </a>{" "}
             •{" "}
-            <a href="https://github.com/Socratica-Org/toolbox" target="_blank">
-              Contribute
-            </a>{" "}
-            •{" "}
-            <a href="https://toolbox.socratica.info/credits" target="_self">
-              Credits
+            <a href="https://github.com/nay244" target="_blank">
+              GitHub
             </a>
           </p>
 
           <div class="issue-container">
-            {CARD_DEFS.map(({ slug, title, issue, n }) => (
+            {CARD_DEFS.map(({ slug, title, node, n }) => (
               <a href={`./${slug}`}>
                 <div class={`card card-${n}`}>
                   <p class="card-title">{title}</p>
-                  <p class="card-subhead">{issue}</p>
+                  <p class="card-subhead">{node}</p>
                   <img src={`./static/${n}-illo.png`} class={`card-illustration-${n}`} />
                 </div>
               </a>
             ))}
-            {Array(TOTAL_CARDS - CARD_DEFS.length)
-              .fill(0)
-              .map(() => (
-                <div class="card card-coming">
-                  <p class="card-title">Coming Soon</p>
-                  <p class="card-subhead">Issue XXX</p>
-                </div>
-              ))}
           </div>
         </div>
       </div>
