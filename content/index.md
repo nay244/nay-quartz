@@ -1,5 +1,6 @@
 ---
-title: Home
+title: "Nay"
+description: "Welcome to my Digital Garden"
 tags:
   - home
 ---
