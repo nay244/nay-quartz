@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" fill="none">
+  <!-- graduation cap: board top -->
+  <polygon points="80,14 148,40 80,52 12,40" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7" fill="#EDE5CB" fill-opacity="0.07"/>
+  <!-- cap: stem/button -->
+  <rect x="76" y="10" width="8" height="6" rx="1" fill="#EDE5CB" fill-opacity="0.5"/>
+  <!-- tassel string -->
+  <line x1="148" y1="40" x2="148" y2="62" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- tassel fringe -->
+  <line x1="142" y1="62" x2="140" y2="72" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.55"/>
+  <line x1="148" y1="62" x2="148" y2="74" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.55"/>
+  <line x1="154" y1="62" x2="156" y2="72" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.55"/>
+  <!-- tassel knot -->
+  <circle cx="148" cy="62" r="3" fill="#E89265" opacity="0.85"/>
+  <!-- diploma scroll -->
+  <rect x="22" y="68" width="72" height="26" rx="3" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.65" fill="#EDE5CB" fill-opacity="0.05"/>
+  <!-- scroll curl left -->
+  <path d="M22 68 Q14 80 22 94" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <!-- scroll curl right -->
+  <path d="M94 68 Q102 80 94 94" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <!-- diploma text lines -->
+  <line x1="32" y1="78" x2="84" y2="78" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.45"/>
+  <line x1="32" y1="85" x2="76" y2="85" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.35"/>
+  <!-- terra seal dot -->
+  <circle cx="58" cy="78" r="5" fill="#E89265" opacity="0.0"/>
+  <circle cx="96" cy="92" r="3.5" fill="#E89265" opacity="0.7"/>
+</svg>

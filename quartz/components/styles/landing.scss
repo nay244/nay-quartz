@@ -1,3 +1,79 @@
+/* ─── Site header band (full-width) ─────────────────────────────────────── */
+.site-header-band {
+  border-bottom: 1px solid var(--ink-3);
+  width: 100%;
+}
+
+/* ─── Site header (inner, constrained to content width) ─────────────────── */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+.site-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-logo {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.site-wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.site-name {
+  font-family: "Source Serif 4", serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.site-tagline {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.site-header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.site-status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--terra);
+  animation: status-blink 2s ease-in-out infinite;
+}
+
+@keyframes status-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.site-status-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: var(--ink-2);
+  letter-spacing: 0.04em;
+}
+
 /* ─── Landing header ─────────────────────────────────────────────────────── */
 .landing-header {
   font-size: 2rem;
@@ -79,7 +155,7 @@
 /* ─── Issue card grid ────────────────────────────────────────────────────── */
 .issue-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
 }
 
@@ -143,12 +219,11 @@
   color: var(--terra);
 }
 
-/* Illustrations — soften colorful PNGs on the dark bg */
+/* Illustrations — slightly muted on dark bg */
 .card img {
   transition: all 0.25s ease;
   transform: rotate(0deg) scale(1);
-  filter: brightness(0.85) saturate(0.65);
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 /* Hover — lift + terra glow */
@@ -161,46 +236,63 @@
 }
 
 .card:hover img {
-  transform: rotate(-15deg) scale(1.05);
-  filter: brightness(0.95) saturate(0.8);
+  transform: rotate(-8deg) scale(1.05);
   opacity: 1;
 }
 
 /* ─── Per-card left-border accent ────────────────────────────────────────── */
 .card-coming { background: var(--paper-3); }
 
-.card-1 { border-left: 3px solid #649aea; background: var(--paper-2); background-image: none; }
-.card-2 { border-left: 3px solid #aab172; background: var(--paper-2); background-image: none; }
-.card-3 { border-left: 3px solid #bf7d1a; background: var(--paper-2); background-image: none; }
-.card-4 { border-left: 3px solid #ad7e95; background: var(--paper-2); background-image: none; }
-.card-5 { border-left: 3px solid #eb856f; background: var(--paper-2); background-image: none; }
-.card-6 { border-left: 3px solid #e18fa7; background: var(--paper-2); background-image: none; }
+.card-1 { border-left: 3px solid #649aea; }
+.card-2 { border-left: 3px solid #bf7d1a; }
+.card-3 { border-left: 3px solid #ad7e95; }
+.card-4 { border-left: 3px solid #aab172; }
+.card-5 { border-left: 3px solid #A99CF5; }
+.card-6 { border-left: 3px solid #eb856f; }
+.card-7 { border-left: 3px solid #e18fa7; }
+.card-8 { border-left: 3px solid #7fa89a; }
 
 /* ─── Illustration positions (full-size, used on article pages) ──────────── */
-.card-illustration-1 { position: absolute; bottom: 0;      left: -15px;  width: 70%; }
-.card-illustration-2 { position: absolute; width: 50%;     bottom: 20px; left: 40px; }
-.card-illustration-3 { position: absolute; width: 50%;     bottom: -40px; left: 30%; }
-.card-illustration-4 { position: absolute; width: 50%;     bottom: 0;    right: -10px; }
-.card-illustration-5 { position: absolute; width: 80%;     bottom: 0;    right: -10px; }
-.card-illustration-6 { position: absolute; width: 80%;     bottom: 0;    right: -10px; }
+.card-illustration-1 { position: absolute; bottom: -4px;  right: 8px;   width: 55%; }
+.card-illustration-2 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-3 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-4 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-5 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-6 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-7 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
+.card-illustration-8 { position: absolute; bottom: -4px;  right: 4px;   width: 55%; }
 
 /* Compact sizes scoped to the landing grid only */
 .issue-container {
-  .card-illustration-1 { width: 40%; left: -8px; }
-  .card-illustration-2 { width: 30%; bottom: 10px; left: 20px; }
-  .card-illustration-3 { width: 30%; bottom: -15px; }
-  .card-illustration-4 { width: 30%; right: -6px; }
-  .card-illustration-5 { width: 45%; right: -6px; }
-  .card-illustration-6 { width: 45%; right: -6px; }
+  .card-illustration-1 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-2 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-3 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-4 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-5 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-6 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-7 { width: 42%; right: 4px; bottom: -2px; }
+  .card-illustration-8 { width: 42%; right: 4px; bottom: -2px; }
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media screen and (max-width: 1400px) {
   .card-title { font-size: 14px; }
+  .issue-container { grid-template-columns: repeat(4, 1fr); }
 }
 
-@media screen and (max-width: 1200px) {
-  .header-card { width: 300px; }
+@media screen and (max-width: 1100px) {
+  .issue-container { grid-template-columns: repeat(2, 1fr); }
+
+  .card {
+    aspect-ratio: 10 / 3;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-card { width: 280px; }
+
+  .site-header { flex-wrap: wrap; gap: 8px; }
+  .site-status-text { font-size: 9px; }
 
   .content-container {
     width: 95%;
@@ -208,23 +300,21 @@
   }
 
   .issue-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
 
   .card {
-    aspect-ratio: 10 / 2;
+    aspect-ratio: 8.5 / 4;
     overflow: hidden;
   }
 
-  $num-cards: 6;
+  $num-cards: 8;
   @for $i from 1 through $num-cards {
-    .card-illustration-#{$i} { width: 20%; }
+    .card-illustration-#{$i} { width: 35%; }
   }
+}
 
-  .card-illustration-1 { left: unset; right: 60px; }
-  .card-illustration-2 { left: unset; right: 40px; }
-  .card-illustration-3 { left: unset; top: 15px; right: 100px; }
-  .card-illustration-4 { left: unset; top: 15px; right: 60px; }
-  .card-illustration-6 { left: unset; right: 20px; top: 20px; }
+@media screen and (max-width: 480px) {
+  .issue-container { grid-template-columns: 1fr; }
 }

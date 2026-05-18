@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" fill="none">
+  <!-- pot body -->
+  <path d="M52 80 L56 96 L104 96 L108 80 Z" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7" fill="#EDE5CB" fill-opacity="0.06"/>
+  <!-- pot rim -->
+  <rect x="46" y="74" width="68" height="8" rx="1" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7" fill="#EDE5CB" fill-opacity="0.08"/>
+  <!-- soil -->
+  <line x1="52" y1="80" x2="108" y2="80" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.35"/>
+  <!-- main stem -->
+  <line x1="80" y1="74" x2="80" y2="36" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.75"/>
+  <!-- left leaf -->
+  <path d="M80 56 Q58 44 52 28" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M80 56 Q62 52 52 28" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.4" fill="#EDE5CB" fill-opacity="0.08"/>
+  <!-- right leaf -->
+  <path d="M80 44 Q102 32 108 16" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M80 44 Q98 38 108 16" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.4" fill="#EDE5CB" fill-opacity="0.08"/>
+  <!-- floating kana: あ (simplified strokes) -->
+  <text x="16" y="36" font-family="serif" font-size="16" fill="#E89265" opacity="0.7">あ</text>
+  <!-- floating kana: 語 -->
+  <text x="122" y="28" font-family="serif" font-size="14" fill="#EDE5CB" opacity="0.45">語</text>
+  <!-- small sprout tip -->
+  <circle cx="80" cy="34" r="3.5" fill="#E89265" opacity="0.8"/>
+</svg>

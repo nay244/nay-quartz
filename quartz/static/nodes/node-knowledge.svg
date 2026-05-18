@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" fill="none">
+  <!-- back card -->
+  <rect x="30" y="22" width="108" height="68" rx="1" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.35" fill="#EDE5CB" fill-opacity="0.04"/>
+  <!-- middle card -->
+  <rect x="22" y="30" width="108" height="62" rx="1" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.5" fill="#EDE5CB" fill-opacity="0.06"/>
+  <!-- front card -->
+  <rect x="14" y="38" width="108" height="54" rx="1" stroke="#EDE5CB" stroke-width="1.5" stroke-opacity="0.7" fill="#EDE5CB" fill-opacity="0.08"/>
+  <!-- bookmark tab on front card -->
+  <rect x="100" y="30" width="14" height="22" rx="1" fill="#E89265" opacity="0.8"/>
+  <!-- content lines on front card -->
+  <line x1="24" y1="54" x2="100" y2="54" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.45"/>
+  <line x1="24" y1="64" x2="90" y2="64" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.35"/>
+  <line x1="24" y1="74" x2="95" y2="74" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.35"/>
+  <line x1="24" y1="84" x2="78" y2="84" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.25"/>
+</svg>
