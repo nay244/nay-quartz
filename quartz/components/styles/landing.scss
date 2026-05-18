@@ -163,7 +163,8 @@
     letter-spacing: 0;
   }
 
-  .quote-attribution {
+  .quote-attribution,
+  .quote-attribution a {
     color: var(--ink);
   }
 }
