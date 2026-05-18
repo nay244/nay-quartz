@@ -114,9 +114,9 @@ body[data-slug="index-maps"]        .article-header { border-left-color: #7fa89a
 
 /* Site/page title in sidebar */
 .page-title a {
-  color: var(--ink);
+  color: var(--indigo);
   font-weight: 700;
-  &:hover { color: var(--indigo) !important; }
+  &:hover { color: var(--indigo-soft) !important; }
 }
 
 /* Breadcrumbs */
@@ -126,8 +126,19 @@ body[data-slug="index-maps"]        .article-header { border-left-color: #7fa89a
   &:hover { color: var(--indigo-soft) !important; }
 }
 
-/* Heading-level links (h1–h6) inherit heading ink, not link green */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+/* h1 headings — electric green */
+h1 {
+  color: var(--indigo);
+}
+
+/* Heading-level links — h1 inherits green, h2–h6 inherit ink */
+h1 a {
+  color: var(--indigo);
+  font-weight: inherit;
+  &:hover { color: var(--indigo-soft) !important; }
+}
+
+h2 a, h3 a, h4 a, h5 a, h6 a {
   color: var(--ink);
   font-weight: inherit;
   &:hover { color: var(--indigo) !important; }
