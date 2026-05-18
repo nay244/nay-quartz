@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "google",
       tagId: "G-PBC0Y59ZMD"
     },
-    baseUrl: "nay244.github.io/nay-quartz",
+    baseUrl: "naynaing.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {

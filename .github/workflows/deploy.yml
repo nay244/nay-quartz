@@ -38,6 +38,9 @@ jobs:
       - name: Build Quartz site
         run: npx quartz build
 
+      - name: Add CNAME for custom domain
+        run: echo "naynaing.xyz" > public/CNAME
+
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
