@@ -1,6 +1,8 @@
 import { QuartzComponentConstructor } from "./types"
 import landingStyle from "./styles/landing.scss"
 
+export const CARDS: Record<string, JSX.Element> = {}
+
 const SECTIONS = [
   {
     slug: "/Diary",
