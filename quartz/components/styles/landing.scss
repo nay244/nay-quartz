@@ -13,10 +13,24 @@
   text-transform: uppercase;
 }
 
+.landing-intro {
+  margin-bottom: 48px;
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+
+  .callout {
+    margin-top: 16px;
+  }
+}
+
 /* ISSUE CARDS */
 .issue-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2);
   gap: 36px;
 }

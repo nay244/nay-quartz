@@ -9,7 +9,7 @@ function PageTitle({ fileData, cfg, displayClass }: QuartzComponentProps) {
   return (
     <h1 class={`page-title ${displayClass ?? ""}`}>
       <a href={baseDir}>{title}</a>
-      <div class="header-card desktop-only">{card}</div>
+      {card && <div class="header-card desktop-only">{card}</div>}
     </h1>
   )
 }
