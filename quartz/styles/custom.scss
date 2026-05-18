@@ -110,6 +110,34 @@ body[data-slug="language-learning"] .article-header { border-left-color: #eb856f
 body[data-slug="wgu"]               .article-header { border-left-color: #e18fa7; }
 body[data-slug="index-maps"]        .article-header { border-left-color: #7fa89a; }
 
+/* ─── Structural chrome — suppress link green on non-content elements ───── */
+
+/* Site/page title in sidebar */
+.page-title a {
+  color: var(--ink);
+  font-weight: 700;
+  &:hover { color: var(--indigo) !important; }
+}
+
+/* Breadcrumbs */
+.breadcrumb-element a {
+  color: var(--ink-2);
+  font-weight: 400;
+  &:hover { color: var(--ink) !important; }
+}
+
+/* Heading-level links (h1–h6) inherit heading ink, not link green */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: var(--ink);
+  font-weight: inherit;
+  &:hover { color: var(--indigo) !important; }
+}
+
+/* Landing header name link — intentional content link, keep green */
+.landing-header a {
+  color: var(--indigo);
+}
+
 /* ─── Navigation ────────────────────────────────────────────────────────── */
 .navigation-container {
   display: flex;
