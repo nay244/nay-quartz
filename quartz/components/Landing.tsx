@@ -59,6 +59,15 @@ export const CARDS = {
   ),
 }
 
+const CARD_DEFS = [
+  { slug: "basics",            title: "The Basics",        issue: "Issue 001", n: 1 },
+  { slug: "getting-started",  title: "Getting Started",   issue: "Issue 002", n: 2 },
+  { slug: "growing-people",   title: "Growing People",    issue: "Issue 003", n: 3 },
+  { slug: "superboosting-ideas", title: "Super- boosting Ideas", issue: "Issue 004", n: 4 },
+  { slug: "maintenance",      title: "Maintenance",       issue: "Issue 005", n: 5 },
+  { slug: "demo-days",        title: "Demo Days",         issue: "Issue 006", n: 6 },
+]
+
 export default (() => {
   function LandingComponent() {
     return (
@@ -81,8 +90,16 @@ export default (() => {
           </p>
 
           <div class="issue-container">
-            {Object.values(CARDS)}
-            {Array(TOTAL_CARDS - Object.keys(CARDS).length)
+            {CARD_DEFS.map(({ slug, title, issue, n }) => (
+              <a href={`./${slug}`}>
+                <div class={`card card-${n}`}>
+                  <p class="card-title">{title}</p>
+                  <p class="card-subhead">{issue}</p>
+                  <img src={`./static/${n}-illo.png`} class={`card-illustration-${n}`} />
+                </div>
+              </a>
+            ))}
+            {Array(TOTAL_CARDS - CARD_DEFS.length)
               .fill(0)
               .map(() => (
                 <div class="card card-coming">
