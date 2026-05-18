@@ -2,14 +2,19 @@
 
 /* ─── Design Tokens ─────────────────────────────────────────────────────── */
 :root {
-  --paper:   #1E1A12;
-  --paper-2: #2A2519;
-  --paper-3: #383021;
-  --ink:     #EDE5CB;
-  --ink-2:   #A89D7E;
-  --ink-3:   #645B41;
-  --terra:   #E89265;
-  --indigo:  #A99CF5;
+  --paper:   #0a0a0f;
+  --paper-2: #12121a;
+  --paper-3: #1c1c2e;
+  --ink:     #e0e0e0;
+  --ink-2:   #6b7280;
+  --ink-3:   #2a2a3a;
+  --ink-grid: rgba(0, 255, 136, 0.05);
+  --divider:  rgba(255, 255, 255, 0.06);
+  --indigo:       #00ff88;
+  --indigo-soft:  #7dffbe;
+  --indigo-tint:  rgba(0, 255, 136, 0.10);
+  --shadow-paper:      2px 2px 0 0 #00ff88, 0 0 18px -4px #00ff88;
+  --shadow-paper-lift: 4px 4px 0 0 #00ff88, 0 0 28px -4px #00ff88;
 }
 
 /* ─── Base ───────────────────────────────────────────────────────────────── */
@@ -17,8 +22,8 @@ body {
   background-color: var(--paper);
   /* 32px grid-paper texture */
   background-image:
-    linear-gradient(rgba(237, 229, 203, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(237, 229, 203, 0.055) 1px, transparent 1px);
+    linear-gradient(var(--ink-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink-grid) 1px, transparent 1px);
   background-size: 32px 32px;
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
@@ -71,9 +76,9 @@ body {
   margin-top: 40px;
   padding: 20px 24px;
   border: 1px solid var(--ink-3);
-  border-left: 3px solid var(--terra);
+  border-left: 3px solid var(--indigo);
   background: var(--paper-2);
-  box-shadow: 3px 3px 0 0 var(--ink-3);
+  box-shadow: var(--shadow-paper);
 
   h1 {
     color: var(--ink);
@@ -119,7 +124,7 @@ body[data-slug="demo-days"] .navigation-container { justify-content: flex-start;
 a.navigation-button {
   border: 1px solid var(--ink-3);
   background: var(--paper-2);
-  box-shadow: 2px 2px 0 0 var(--ink-3);
+  box-shadow: var(--shadow-paper);
   border-radius: 0;
   padding: 14px 20px;
   width: 18%;
@@ -130,8 +135,8 @@ a.navigation-button {
 
   &:hover {
     transform: translate(-1px, -1px);
-    box-shadow: 3px 3px 0 0 var(--terra);
-    border-color: var(--terra);
+    box-shadow: var(--shadow-paper-lift);
+    border-color: var(--indigo);
   }
 
   p {
@@ -158,9 +163,9 @@ body[data-slug="index-maps"]        a.navigation-button:hover { border-color: #7
 .end-message {
   margin-top: 48px;
   border: 1px solid var(--ink-3);
-  border-left: 3px solid var(--terra);
+  border-left: 3px solid var(--indigo);
   background: var(--paper-2);
-  box-shadow: 3px 3px 0 0 var(--ink-3);
+  box-shadow: var(--shadow-paper);
   padding: 24px;
   color: var(--ink);
 
@@ -182,7 +187,7 @@ body[data-slug="index-maps"]        a.navigation-button:hover { border-color: #7
     display: inline-block;
     margin: 20px 0 0;
     padding: 12px 28px;
-    background: var(--terra);
+    background: var(--indigo);
     color: var(--paper);
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
@@ -192,12 +197,12 @@ body[data-slug="index-maps"]        a.navigation-button:hover { border-color: #7
     text-decoration: none;
     border: none;
     cursor: pointer;
-    box-shadow: 2px 2px 0 0 var(--ink-3);
+    box-shadow: var(--shadow-paper);
     transition: transform 0.15s, box-shadow 0.15s;
 
     &:hover {
       transform: translate(-1px, -1px);
-      box-shadow: 3px 3px 0 0 var(--ink);
+      box-shadow: var(--shadow-paper-lift);
     }
   }
 

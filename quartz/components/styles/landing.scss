@@ -58,7 +58,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--terra);
+  background-color: var(--indigo);
   animation: status-blink 2s ease-in-out infinite;
 }
 
@@ -93,7 +93,7 @@
   color: var(--ink-2);
 
   a {
-    color: var(--terra);
+    color: var(--indigo);
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }
@@ -111,14 +111,14 @@
 }
 
 .prompt-symbol {
-  color: var(--terra);
+  color: var(--indigo);
 }
 
 .prompt-cursor {
   display: inline-block;
   width: 8px;
   height: 1em;
-  background-color: var(--terra);
+  background-color: var(--indigo);
   margin-left: 2px;
   vertical-align: text-bottom;
   animation: blink-cursor 1.2s step-end infinite;
@@ -141,14 +141,14 @@
   }
 
   a {
-    color: var(--terra);
+    color: var(--indigo);
   }
 
   .callout {
     margin-top: 12px;
     border: 1px solid var(--ink-3);
     background: var(--paper-2);
-    box-shadow: 2px 2px 0 0 var(--ink-3);
+    box-shadow: var(--shadow-paper);
   }
 }
 
@@ -158,7 +158,7 @@
 
   p {
     font-size: 18px;
-    color: var(--terra);
+    color: var(--indigo);
     line-height: 1.6;
     letter-spacing: 0;
   }
@@ -180,7 +180,7 @@
 .card {
   background-color: var(--paper-2);
   border: 1px solid var(--ink-3);
-  box-shadow: 3px 3px 0 0 var(--ink-3);
+  box-shadow: var(--shadow-paper);
   border-radius: 0;
   aspect-ratio: 8.5 / 4;
   padding: 12px 14px;
@@ -196,7 +196,7 @@
     position: absolute;
     top: 10px;
     right: 12px;
-    color: var(--terra);
+    color: var(--indigo);
     font-family: "IBM Plex Mono", monospace;
     font-size: 13px;
     opacity: 0.7;
@@ -210,7 +210,7 @@
   display: inline-block;
 
   .card {
-    box-shadow: 2px 2px 0 0 var(--ink-3);
+    box-shadow: var(--shadow-paper);
 
     &::after { display: none; }
   }
@@ -233,7 +233,7 @@
   font-family: "IBM Plex Mono", monospace;
   letter-spacing: 0.1em;
   margin-top: 0;
-  color: var(--terra);
+  color: var(--indigo);
 }
 
 /* Illustrations — slightly muted on dark bg */
@@ -246,8 +246,8 @@
 /* Hover — lift + terra glow */
 .card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 0 var(--terra);
-  border-color: var(--terra);
+  box-shadow: var(--shadow-paper-lift);
+  border-color: var(--indigo);
 
   &::after { opacity: 1; }
 }

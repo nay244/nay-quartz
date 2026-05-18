@@ -101,20 +101,20 @@ export default (() => {
           {/* Logo: serif-N monogram in a dark circle with terra diagonal */}
           <div class="site-logo" aria-label="Nay logo">
             <svg viewBox="0 0 56 56" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28" cy="28" r="27" fill="#2A2519" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.6"/>
+              <circle cx="28" cy="28" r="27" fill="#12121a" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.6"/>
               {/* N verticals */}
-              <line x1="16" y1="14" x2="16" y2="42" stroke="#EDE5CB" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="40" y1="14" x2="40" y2="42" stroke="#EDE5CB" stroke-width="2.5" stroke-linecap="round"/>
-              {/* N terra diagonal */}
-              <line x1="16" y1="14" x2="40" y2="42" stroke="#E89265" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="16" y1="14" x2="16" y2="42" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="40" y1="14" x2="40" y2="42" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
+              {/* N green diagonal */}
+              <line x1="16" y1="14" x2="40" y2="42" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round"/>
               {/* vine sprigs left */}
-              <line x1="8" y1="28" x2="16" y2="28" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.45"/>
-              <path d="M11 28 Q9 24 7 21" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.4"/>
-              <path d="M13 28 Q11 32 9 35" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.4"/>
+              <line x1="8" y1="28" x2="16" y2="28" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.45"/>
+              <path d="M11 28 Q9 24 7 21" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
+              <path d="M13 28 Q11 32 9 35" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
               {/* vine sprigs right */}
-              <line x1="40" y1="28" x2="48" y2="28" stroke="#EDE5CB" stroke-width="1" stroke-opacity="0.45"/>
-              <path d="M45 28 Q47 24 49 21" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.4"/>
-              <path d="M43 28 Q45 32 47 35" stroke="#EDE5CB" stroke-width="0.75" stroke-opacity="0.4"/>
+              <line x1="40" y1="28" x2="48" y2="28" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.45"/>
+              <path d="M45 28 Q47 24 49 21" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
+              <path d="M43 28 Q45 32 47 35" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
             </svg>
           </div>
           <div class="site-wordmark">
@@ -165,7 +165,7 @@ export default (() => {
                     and all the fears you have overcome.
                   </em>
                 </u>
-                ."
+                "
                 <br />
                 <span class="quote-attribution">
                   — <strong>
