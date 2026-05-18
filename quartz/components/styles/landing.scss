@@ -152,6 +152,18 @@
   }
 }
 
+/* ─── Quote block (landing page only) ───────────────────────────────────── */
+.quote-block {
+  margin-top: 12px;
+
+  p {
+    font-size: 18px;
+    color: var(--terra);
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+}
+
 /* ─── Issue card grid ────────────────────────────────────────────────────── */
 .issue-container {
   display: grid;

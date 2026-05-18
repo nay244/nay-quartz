@@ -155,7 +155,7 @@ export default (() => {
               I weave together my thoughts, my learning, and my memories to create a narrative
               that's uniquely mine.
             </p>
-            <div class="article-header">
+            <div class="article-header quote-block">
               <h1>Favorite Quote</h1>
               <p>
                 "<u>
@@ -165,8 +165,9 @@ export default (() => {
                     and all the fears you have overcome.
                   </em>
                 </u>
-                ." —{" "}
-                <strong>
+                ."
+                <br />
+                — <strong>
                   <a href="https://www.goodreads.com/en/book/show/31997446" target="_blank">
                     N.R. Walker
                   </a>
