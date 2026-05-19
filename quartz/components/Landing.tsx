@@ -98,24 +98,9 @@ export default (() => {
     return (
       <header class="site-header">
         <div class="site-header-left">
-          {/* Logo: serif-N monogram in a dark circle with terra diagonal */}
+          {/* Logo: neon N floral monogram */}
           <div class="site-logo" aria-label="Nay logo">
-            <svg viewBox="0 0 56 56" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28" cy="28" r="27" fill="#12121a" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.6"/>
-              {/* N verticals */}
-              <line x1="16" y1="14" x2="16" y2="42" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="40" y1="14" x2="40" y2="42" stroke="#e0e0e0" stroke-width="2.5" stroke-linecap="round"/>
-              {/* N green diagonal */}
-              <line x1="16" y1="14" x2="40" y2="42" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round"/>
-              {/* vine sprigs left */}
-              <line x1="8" y1="28" x2="16" y2="28" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.45"/>
-              <path d="M11 28 Q9 24 7 21" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
-              <path d="M13 28 Q11 32 9 35" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
-              {/* vine sprigs right */}
-              <line x1="40" y1="28" x2="48" y2="28" stroke="#e0e0e0" stroke-width="1" stroke-opacity="0.45"/>
-              <path d="M45 28 Q47 24 49 21" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
-              <path d="M43 28 Q45 32 47 35" stroke="#e0e0e0" stroke-width="0.75" stroke-opacity="0.4"/>
-            </svg>
+            <img src="./static/icon.png" alt="Nay logo" width="48" height="48" style="border-radius:0;margin:0;display:block;" />
           </div>
           <div class="site-wordmark">
             <span class="site-name">Nay's Digital Garden</span>
