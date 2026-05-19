@@ -12,10 +12,6 @@ A collection of personal and professional projects.
 <p>Autonomous pipeline to create song covers or voice-overs of any Youtube video using RVC v2 trained AI voices.</p>
 </div>
 
-# MelodyCraft AI
-
-Autonomous pipeline to create song covers or voice-overs of any Youtube video using RVC v2 trained AI voices.
-
 ## The Autonomous Pipeline
 The autonomous pipeline of the AICoverGen application is primarily orchestrated through the main.py script. This script integrates various components and functionalities to successfully run the application. Here's an overview of how the scripts work in conjunction:
 

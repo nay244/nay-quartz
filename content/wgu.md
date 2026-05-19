@@ -36,11 +36,6 @@ This place will mostly be a dump of my thoughts and opinions on the courses requ
 <p>The Data Analytics Journey gives an overview of the entire analytics life cycle, covering terminology, tools, and techniques.</p>
 </div>
 
-# D204 - The Data Analytics Journey
-
-The Data Analytics Journey gives an overview of the entire analytics life cycle. Learners gain fluency in data analytics terminology, tools, and techniques. 
-The course contextualizes the data analytics journey firmly with organizational metrics and requirements to position graduates to answer key questions for businesses and other employers. 
-
 ## Course Analysis
 The first class in the MSDA program. It serves as mostly a "intro to" course that covers general concepts, the business context, and the fundamentals of the Data Analysis procedures.
 
@@ -63,11 +58,6 @@ Overall, I finished the course in about three days and would consider it fairly 
 <p>Data Acquisition builds proficiency in SQL and the initial stages of the data analytics lifecycle, introducing relational databases and data transference skills.</p>
 </div>
 
-# D205 - Data Acquisition
-
-Data Acquisition builds proficiency in Structured Query Language (SQL) and the initial stages of the data analytics lifecycle. 
-The course introduces relational databases. Students gain concrete skills in data transference and database manipulation.
-
 ## Course Analysis
 D205 serves as basically an SQL refresher course. Upon starting, I realized I needed a refresher in SQL since my last encounter with it was during one of my database courses at George Mason, during my BSIT program. To brush up my skills, I opted for a course on DataCamp, a platform new to me. I was pleasantly surprised by their setup, which is quite similar to Udacity's, featuring browser-based plugins. One part of the screen provided instructions while the other allowed me to interact with a PostgreSQL database, run queries, and practice commands. The course content served mostly as a review, but I did pick up a few new concepts. I appreciated the hands-on approach to writing SQL queries, and the lessons were of good quality, logical, and functioned smoothly. However, I would have preferred more exercises that required independent problem-solving rather than semi-completed code snippets.
 
@@ -88,12 +78,6 @@ While the course did offer me a good refresher on SQL and navigating an online d
 <h1>D206 - Data Cleaning</h1>
 <p>Data Cleaning continues building proficiency in the data analytics life cycle with data preparation skills, covering exploring, transforming, and imputing data.</p>
 </div>
-
-# D206 - Data Cleaning
-
-Data Cleaning continues building proficiency in the data analytics life cycle with data preparation skills. 
-This course addresses exploring, transforming, and imputing data as well as handling outliers. Learners write code to manipulate, structure, and clean data as well as to reduce features in data sets. 
-The following courses are prerequisites: The Data Analytics Journey, and Data Acquisition.
 
 ## Course Analysis
 Starting this course I neglected the course materials for most of the class, assuming it would focus solely on data cleaning. However, I later realized this approach was flawed. The project also covered principal component analysis (PCA), a topic I was less acquainted with. I discovered that the class project guide, which I call the "secret" rubric, was much more instructive than the official one, which was too vague and sometimes misleading.
@@ -116,12 +100,6 @@ The course was fairly decent overall. Dr. Middleton's videos stood out as a high
 <h1>D207 - Exploratory Data Analysis</h1>
 <p>Exploratory Data Analysis covers statistical principles supporting the data analytics life cycle, including measures of central tendency, correlations, variation, and hypothesis testing.</p>
 </div>
-
-# D207 - Exploratory Data Analysis
-
-Exploratory Data Analysis covers statistical principles supporting the data analytics life cycle. 
-Students in this course compute and interpret measures of central tendency, correlations, and variation. 
-The course introduces hypothesis testing, focusing on application for parametric tests, and addresses communication skills and tools to explain an analyst's findings to others within an organization.
 
 ## Course Analysis
 For this course, I ignored most of the class materials, except for the Data Camp unit on Performing Experiments in Python and was helpful in showing me how to execute various tests in Python.
@@ -150,11 +128,6 @@ The structure of the project felt a bit disjointed, particularly with the insert
 <p>Predictive Modeling builds on data preparation and cleaning, enabling students to conduct logistic regression and multiple regression to model phenomena revealed by data.</p>
 </div>
 
-# D208 - Predictive Modeling
-
-Predictive Modeling builds on initial data preparation, cleaning, and analysis, enabling students to make assertions vital to organizational needs. In this course, students conduct logistic regression and multiple regression to model the phenomena revealed by data. 
-The course covers normality, homoscedasticity, and significance, preparing students to communicate findings and the limitations of those findings accurately to organizational leaders.
-
 ## Course Analysis
 Compared to previous courses, this course was a huge step up in difficulty and possible took me the longest to pass. The most valuable resources for me were Dr. Middleton's two webinars. Unfortunately, I didn't find Dr. Sewell's lectures to be particularly useful, except for the slide on calculating the Variance Inflation Factor to check for multicollinearity. Additionally, Mark Keith's succinct videos were instrumental in demonstrating the code for multiple linear regression and standardization. For Task 2, I revisited the webinars and also benefited from Susan Li's thorough linear regression tutorial and Proteus's guidance on calculating odds ratios.
 
@@ -177,12 +150,6 @@ It seems this is the most extensive and challenging task of the program, encompa
 <h1>D209 - Data Mining I</h1>
 <p>Data Mining I expands predictive modeling into nonlinear dimensions, implementing supervised models for classification and prediction to unearth relationships among variables.</p>
 </div>
-
-# D209 - Data Mining I
-
-Data Mining I expands predictive modeling into nonlinear dimensions, enhancing the capabilities and effectiveness of the data analytics lifecycle. 
-In this course, learners implement supervised models—specifically classification and prediction data mining models—to unearth relationships among variables that are not apparent with more surface-level techniques. 
-The course provides frameworks for assessing models' sensitivity and specificity.
 
 ## Course Analysis
 D209 felt like a continuation of [[wgu#d208---predictive-modeling|D208]], focusing on more predictive modeling with different techniques. Thanks to the helpful DataCamp videos, it seemed easier than D208.
@@ -212,11 +179,6 @@ Compared to D208, this class was relatively easy only taking me a 3-4 days to pa
 <p>Representation and Reporting focuses on communicating observations and patterns to diverse stakeholders through data visualizations, audio representations, and interactive dashboards.</p>
 </div>
 
-# D210 - Representation and Reporting
-
-Representation and Reporting focuses on communicating observations and patterns to diverse stakeholders, a key aspect of the data analytics life cycle. 
-This course helps students gain communication and storytelling skills. It also covers data visualizations, audio representations, and interactive dashboards
-
 ## Course Analysis
 D210 was my introduction to data visualization with Tableau, a tool I hadn't used before. In preparation for this course, I took [Udemy's Tableau 2022 A-Z: Hands-On Tableau Training for Data Science](https://www.udemy.com/course/tableau10/) course . I completed the entire series and found the learning curve enjoyable. As a WGU student, I took advantage of the complimentary one-year Tableau Desktop license we receive. While I haven't explored Tableau Prep Builder or pursued the Tableau Desktop Specialist certification yet, I plan to do so post-program, especially since we have free access to Tableau's preparation materials and a discount on the certification exam.
 
@@ -240,11 +202,6 @@ I managed to complete all the coursework for D210 within a week, wrapping up jus
 <p>Advanced Data Acquisition enhances theoretical and SQL skills, covering advanced SQL operations, aggregating data, and acquiring data from various sources.</p>
 </div>
 
-# D211 - Advanced Data Acquisition
-
-Advanced Data Acquisition enhances theoretical and SQL skills in furthering the data analytics life cycle. 
-This course covers advanced SQL operations, aggregating data, and acquiring data from various sources in support of core organizational needs.
-
 ## Course Analysis
 This course operates in tandem with [[wgu#d210---representation-and-reporting|D210]], utilizing Tableau Desktop to create dashboards for the churn/medical datasets, supplemented by an external dataset you select. The primary distinction in this course is the method of data importation; instead of a single CSV file, you're tasked with uploading your data into a PostgreSQL database via a virtual machine using pgAdmin, then connecting Tableau to that database. This course proved to be more intricate than D210, largely due to the virtual machine work and several ambiguously written rubric components. Ambiguity in rubrics has been a recurring theme in this program, but this course exacerbated that issue.
 
@@ -262,9 +219,6 @@ The process of creating and preparing the combined dataset involves using pgAdmi
 <h1>D212 - Data Mining II</h1>
 <p>Data Mining II delves into advanced data mining techniques using Python, focusing on K-means clustering, Principal Component Analysis, and Market Basket Analysis.</p>
 </div>
-
-# D212 - Data Mining II
-Data Mining II is pivotal for understanding and leveraging data within organizations. This course delves into advanced data mining techniques using Python or R, focusing on K-means clustering, Principle Component Analysis (PCA), and Market Basket Analysis.
 
 ## Course Analysis
 This course is structured around three main tasks, each designed to build practical skills in different aspects of data mining:
@@ -290,9 +244,6 @@ Data Mining II was a rigorous and enlightening course that expanded my analytica
 <p>Advanced Data Analytics prepares students for career-long growth in advancing tools and techniques, covering machine learning, neural networks, randomness, and unconventional data sources.</p>
 </div>
 
-# D213 - Advanced Data Analytics
-Advanced Data Analytics prepares students for career-long growth in steadily advancing tools and techniques and provides emerging concepts in data analysis. This course hones the mental and theoretical flexibility that will be required of analysts in the coming decades while grounding their approach firmly in ethical and organizational-need-focused practice. Topics include machine learning, neural networks, randomness, and unconventional data sources.
-
 ## Course Analysis
 This course is structured around three main tasks, each designed to build practical skills in different aspects of data mining:
 
@@ -313,9 +264,6 @@ Advanced Data Analytics is a comprehensive course that equips students with the 
 <h1>D214 - Data Analytics Graduate Capstone</h1>
 <p>The Data Analytics Graduate Capstone allows students to apply academic and professional abilities developed as a graduate student, integrating skills from several program domains into one project.</p>
 </div>
-
-# D214 - Data Analytics Graduate Capstone
-The Data Analytics Graduate Capstone allows students to apply the academic and professional abilities developed as a graduate student. This capstone challenges students to integrate skills and knowledge from several program domains into one project.
 
 ## Course Analysis
 This course is structured around three main tasks:

@@ -16,10 +16,6 @@ This section will contain a collection of things regarding data analysis. It wil
 <p>This section will be where I store information embracing the capabilities of Excel for data analysis, financial modeling, and business intelligence.</p>
 </div>
 
-# Excel
-
-This section of my blog will be where I store information embracing the capabilities of Excel for data analysis, financial modeling, and business intelligence.
-
 **Why Excel?** My goal is not just to learn a spreadsheet tool but to unlock a new realm of possibilities in data management and analysis. Whether it's understanding financial trends or optimizing business operations.
 I want to build a strong foundation in spreadsheet manipulation, master the art of data visualization, and eventually explore advanced features like macros and pivot tables. I am intrigued by the stories of Excel enhancing productivity and providing strategic insights, and I hope to be one of those stories.
 
@@ -42,9 +38,6 @@ I want to build a strong foundation in spreadsheet manipulation, master the art 
 <h1>Pluralsight Excel</h1>
 <p>Notes from the Pluralsight course on Excel 365, detailing key features and functionalities essential for mastering Excel in a professional setting.</p>
 </div>
-
-# Pluralsight Excel 365 Training
-This section of the webpage will contains notes from the Pluralsight course on Excel 365, detailing key features and functionalities that are essential for mastering Excel in a professional setting.
 
 ## Formatting
 Discusses the importance of cell formatting for readability and data interpretation. Key topics include number formatting, cell styles, and custom formats.
@@ -258,10 +251,6 @@ These notes are a concise summary of the extensive functionalities of Excel 365 
 <p>This blog marks the beginning of a new chapter in my professional life, one where I embrace the power of Python for data analysis, machine learning, and data science.</p>
 </div>
 
-# Python
-
-This blog marks the beginning of a new chapter in my professional life, one where I embrace the power of Python for data analysis, machine learning, and data science.
-
 **Why Python?** My aim is not just to learn a programming language but to unlock a new realm of possibilities in technology. Whether it's understanding how data shapes decisions or exploring the wonders of artificial intelligence, Python seems to be the key.
 I want to build a strong foundation in programming, understand the basics of data analysis, and eventually explore the vast areas of machine learning and data science. I am intrigued by the stories of Python transforming careers and opening doors to new opportunities, and I hope to be one of those stories.
 
@@ -282,12 +271,6 @@ I want to build a strong foundation in programming, understand the basics of dat
 <h1>Python Commands</h1>
 <p>A quick reference for Python commands and basic explanations, based on the official Python quick reference.</p>
 </div>
-
-# Python Cheatsheet
-
-This page serves as a quick reference for python commands and basic explanations.
-
-This entire section is based on [this page](https://www.python.org/ftp/python/doc/quick-ref.1.3.html)
 
 ## Invocation Options
 
