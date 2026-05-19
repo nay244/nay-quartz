@@ -131,6 +131,13 @@ h1 {
   color: var(--indigo);
 }
 
+/* Markdown h1s immediately after an article-header are anchor-only:
+   the article-header already renders the visible heading, so hide
+   the duplicate while keeping its id in the DOM for TOC links. */
+.article-header + h1 {
+  display: none;
+}
+
 /* Heading-level links — h1 inherits green, h2–h6 inherit ink */
 h1 a {
   color: var(--indigo);

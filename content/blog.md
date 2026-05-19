@@ -28,6 +28,8 @@ Topics that show up often:
 <p>From over 2 years since the initial discussion to the months of planning, a journey that started as a shared dream among a few close friends finally became a reality.</p>
 </div>
 
+# Japan 2023
+
 ## Travel Log
 
 **Tokyo (Day 1: 10/22)** </br>

@@ -44,6 +44,8 @@ Think of each card on the home page as a **cluster** of related notes, not a rig
 <p>This page lists all notes chronologically. Browse by tag or use the graph view to explore connections.</p>
 </div>
 
+# Full Timeline
+
 > **Tip:** Use the search bar or graph view to navigate notes. You can also filter by tags like `timeline`, `japanese`, `wgu`, or `dataanalytics`.
 
 ## Recent Notes
