@@ -11,7 +11,29 @@ My professional background spans cybersecurity engineering and data analytics. D
 
 ## Certifications
 
-A record of professional certifications earned throughout my career. Certifications related to cloud platforms, cybersecurity, and data analytics will be listed here.
+<div class="article-header">
+<h1>CompTIA Security+</h1>
+<p>Industry-recognized cybersecurity certification validating baseline skills for core security functions and a career in IT security.</p>
+</div>
+
+- **Issued:** June 22, 2021
+- **Expires:** June 22, 2027
+- **Candidate ID:** COMP001021878444
+- **Verify:** [verify.CompTIA.org](http://verify.CompTIA.org) · Code: `PL0RP92HZ344Q15H`
+
+---
+
+<div class="article-header">
+<h1>IBM Cybersecurity Analyst</h1>
+<p>Professional certificate covering cybersecurity analyst tools, threat intelligence, compliance frameworks, incident response, and forensics across 8 courses.</p>
+</div>
+
+- **Issued:** February 28, 2023
+- **Issuer:** IBM / Coursera Professional Certificate
+- **Courses:** Introduction to Cybersecurity Tools & Cyber Attacks · Cybersecurity Roles, Processes & Operating System Security · Cybersecurity Compliance Framework & System Administration · Network Security & Database Vulnerabilities · Penetration Testing, Incident Response and Forensics · Cyber Threat Intelligence · Cybersecurity Capstone: Breach Response Case Studies · IBM Cybersecurity Analyst Assessment
+- **Verify:** [coursera.org/verify/professional-cert/96LXVFJ7MREA](https://coursera.org/verify/professional-cert/96LXVFJ7MREA)
+
+---
 
 ## Goals
 
