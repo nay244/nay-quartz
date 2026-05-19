@@ -1,9 +1,9 @@
 ---
 title: Career
 ---
-# Career
+# Experience, Certifications and Goals
 
-This section documents my professional experience, certifications, and career milestones. Content coming soon.
+This section documents my professional experience, certifications, and career milestones.
 
 ## Experience
 

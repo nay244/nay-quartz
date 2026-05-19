@@ -42,8 +42,6 @@ This entirety of this Japanese section and all the contents within is credited t
 
 ## All Japanese Notes
 
-* [[58465ab9|Japanese Learning Loop]]
-* [[99eaf9c2|Japanese Writing Systems]]
 * [[language-learning#kanji|Kanji]]
 * [[language-learning#ateji|Ateji]]
 * [[language-learning#furigana|Furigana]]
@@ -1319,12 +1317,6 @@ As you can see, there's no hard rules about what goes in furigana. For some
 [[language-learning#ateji|Ateji]] words, you will often see katakana as furigana. Sometimes authors even
 like having fun and put kanji as furigana for other kanji:
 
-<center>
-
-![Kanji as Furigana](/static/kanji_as_furigana.png)
-
-</center>
-
 ## Origins
 
 When [[language-learning#kanji|Kanji]] first arrived in Japan, it was used to render Chinese (usually
@@ -1411,8 +1403,6 @@ You can think of <ruby>義訓<rt>ぎくん</rt></ruby> as something like that.
 
 <center>
 
-![Gikun example 1](/static/gikun_example_1.png)
-
  「大人が<b><ruby>子供達<rt>ぼくたち</rt></ruby></b>を殺す気持ち」でも？
 
 </center>
@@ -1434,8 +1424,6 @@ have. By analyzing this panel we know these two facts:
 
 <center>
 
-![Gikun example 2](/static/gikun_example_2.png)
-
  これで<b><ruby>GP<rt>ここ</rt></ruby></b>を出た先
 
 </center>
@@ -1446,8 +1434,6 @@ when the character says ここ ("here"), he's actually talking about the place
 they are at and reminds the reader that the location is called "GP".
 
 <center>
-
-![Gikun example 3](/static/gikun_example_3.jpg)
 
  ついに<b><ruby>わたし<rt>クマ</rt></ruby></b>が登場する
 

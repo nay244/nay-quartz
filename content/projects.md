@@ -1,7 +1,7 @@
 ---
 title: Projects
 ---
-# Projects
+# Fun Things I've Worked On
 
 A collection of personal and professional projects.
 
