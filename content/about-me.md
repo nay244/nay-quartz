@@ -32,16 +32,18 @@ In no particular order, my hobbies are:
 * Github: [Nay244] (https://github.com/nay244/)
 * LinkedIn: [Nay Naing] (https://www.linkedin.com/in/naaay-naing/)
 
+# Reviews
+
+Welcome to the the review corner of my webpage. This is where I will post my personal reviews of shows and games or any other mediums that I've thoroughly enjoyed.
+
+I will mainly only post stuff here that I would give 10/10 ratings to and would highly recommend for others to watch and or experience.
+
 ---
 
 <div class="article-header">
 <h1>Games</h1>
-<p>Welcome to the games review corner of my webpage. This is where I will post my personal reviews of games that I've thoroughly enjoyed.</p>
+<p>Welcome to the games review corner of my webpage. This is where I will post my short personal reviews of games that I've thoroughly enjoyed.</p>
 </div>
-
-# Games
-
-Welcome to the the games review corner of my webpage. This is where I will post my personal reviews of shows that I've thoroughly enjoyed.
 
 ## List of Games
 
@@ -49,28 +51,9 @@ Welcome to the the games review corner of my webpage. This is where I will post 
 
 <div class="article-header">
 <h1>Shows</h1>
-<p>Welcome to the shows review corner of my webpage. This is where I will post my personal reviews of shows that I've thoroughly enjoyed.</p>
+<p>Welcome to the shows review corner of my webpage. This is where I will post my short personal reviews of shows that I've thoroughly enjoyed.</p>
 </div>
-
-# Shows
-
-Welcome to the the shows review corner of my webpage. This is where I will post my personal reviews of shows that I've thoroughly enjoyed.
 
 ## List of Shows
 
 ---
-
-<div class="article-header">
-<h1>Reviews</h1>
-<p>Welcome to the review corner of my webpage — personal reviews of shows, games, and other mediums I've thoroughly enjoyed.</p>
-</div>
-
-# Reviews
-
-Welcome to the the review corner of my webpage. This is where I will post my personal reviews of shows and games or any other mediums that I've thoroughly enjoyed.
-
-I will mainly only post stuff here that I would give 10/10 ratings to and would highly recommend for others to watch and or experience.
-
-## Categories
- * [[about-me#shows|Shows]]
- * [[about-me#games|Games]]
