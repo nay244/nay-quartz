@@ -45,7 +45,7 @@ export const CARDS = {
       <div class="card card-5">
         <p class="card-title">Azure</p>
         <p class="card-subhead">Node 05</p>
-        <img src="./static/node-05-azure.svg" class="card-illustration-5" />
+        <img src="./static/node-azure.png" class="card-illustration-5" />
       </div>
     </a>
   ),
@@ -92,7 +92,7 @@ const CARD_DEFS = [
   { slug: "career",            title: "Career",             node: "Node 02", n: 2, img: "node-03-career.png"   },
   { slug: "projects",          title: "Projects",           node: "Node 03", n: 3, img: "node-04-projects.png" },
   { slug: "knowledge-base",    title: "Knowledge Base",     node: "Node 04", n: 4, img: "node-02-knowledge.png"},
-  { slug: "azure",             title: "Azure",              node: "Node 05", n: 5, img: "node-05-azure.svg"    },
+  { slug: "azure",             title: "Azure",              node: "Node 05", n: 5, img: "node-azure.png"    },
   { slug: "blog",              title: "Blog",               node: "Node 06", n: 6, img: "node-blog.png"        },
   { slug: "language-learning", title: "Language Learning",  node: "Node 07", n: 7, img: "node-05-language.png" },
   { slug: "wgu",               title: "WGU",                node: "Node 08", n: 8, img: "node-06-wgu.png"      },
