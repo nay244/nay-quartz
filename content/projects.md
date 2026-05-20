@@ -8,6 +8,56 @@ A collection of personal and professional projects.
 ---
 
 <div class="article-header">
+<h1>ServiceNow Data Pipeline</h1>
+<p>End-to-end data pipeline extracting ServiceNow ITSM records through AWS managed services, transforming via DBT, and delivering live Power BI dashboards — built on a medallion architecture.</p>
+</div>
+
+# ServiceNow Data Pipeline
+
+## Overview
+
+A nine-stage production data pipeline that moves ServiceNow ITSM data (Incidents, Change Requests, Problems, CMDB) into Microsoft Power BI for operational reporting. The pipeline follows a **medallion architecture** (Bronze → Silver layers) and is fully event-driven — each successful extraction automatically triggers transformation and report refresh with no manual intervention.
+
+## Pipeline Architecture
+
+| Stage | Service | Role |
+|-------|---------|------|
+| 1 | ServiceNow REST API | Source system — table-level read via dedicated API service account |
+| 2 | AWS AppFlow | Managed ETL connector; daily incremental extraction per table |
+| 3 | Amazon Redshift (Bronze) | Raw landing zone — timestamped, unmodified source data |
+| 4 | Amazon EventBridge | Event-driven trigger on AppFlow S3 success events |
+| 5 | Amazon SQS | Message queue decoupling EventBridge from Jenkins |
+| 6 | Jenkins + Bitbucket | CI/CD pipeline; polls SQS and executes DBT transformation jobs |
+| 7 | Amazon Redshift (Silver) | Clean, modeled reporting layer managed by DBT |
+| 8 | Microsoft Power Automate | HTTP-triggered dataset refresh orchestration |
+| 9 | Microsoft Power BI Service | Semantic model, dashboards, and row-level security |
+
+## Data Extraction & Ingestion
+
+AWS AppFlow acts as the managed ETL connector between ServiceNow and Redshift, abstracting API authentication, pagination, and incremental load logic. One AppFlow flow is created per source table for independent scheduling and targeted reruns. The incremental load strategy uses a watermark field (`sys_updated_on`) to extract only new or changed records, minimizing API quota consumption.
+
+AppFlow stages data in S3 before Redshift ingestion. All records land in the **Bronze schema** (`bronze.incident`, `bronze.change_request`, etc.) with ingestion timestamps for lineage tracking and reprocessing support.
+
+## Transformation Layer
+
+Jenkins polls SQS for flow-completion messages. On receipt, it pulls the latest DBT project from Bitbucket and executes the relevant DBT models against the Bronze schema. Transformed output is written to the **Silver schema** (`silver.servicenow_incidents`, etc.) — clean, typed, and joined to reference data.
+
+DBT enforces data quality at run time using built-in tests (`unique`, `not_null`, `accepted_values`). On a successful DBT run, Jenkins sends an HTTP POST to a Power Automate webhook to trigger the Power BI dataset refresh, then deletes the SQS message.
+
+## Reporting & Access Control
+
+Power BI Desktop connects to the Redshift Silver schema via JDBC/ODBC through an on-premises data gateway (hosted on an EC2 instance in the same VPC). Reports and semantic models are published to a shared Power BI workspace. **Row-Level Security (RLS)** roles are defined in Power BI Desktop and validated with the "View as role" feature before go-live, ensuring each team sees only their relevant data.
+
+## Key Design Decisions
+
+- **One flow per table** — independent scheduling and error isolation; failures in one table do not cascade
+- **SQS as buffer** — decouples EventBridge from Jenkins, guaranteeing delivery even during transient consumer downtime; Dead Letter Queue captures messages that exceed max receive count
+- **Least-privilege IAM** — each stage uses a scoped service role (AppFlow role, DBT IAM user, M365 service account) with only the permissions required for that stage
+- **Private networking** — Redshift clusters reside in a private subnet; the on-premises data gateway on EC2 allows Power BI Service to reach Silver without public cluster exposure
+
+---
+
+<div class="article-header">
 <h1>MelodyCraft</h1>
 <p>Autonomous pipeline to create song covers or voice-overs of any Youtube video using RVC v2 trained AI voices.</p>
 </div>
