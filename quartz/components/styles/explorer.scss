@@ -10,7 +10,7 @@ button#explorer {
   align-items: center;
 
   & h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     display: inline-block;
     margin: 0;
   }
@@ -84,7 +84,7 @@ svg {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.5rem;
     display: inline-block;
@@ -107,7 +107,7 @@ svg {
     font-family: var(--headerFont);
 
     & p {
-      font-size: 0.95rem;
+      font-size: 1.2rem;
       display: inline-block;
       color: var(--secondary);
       font-weight: 600;
