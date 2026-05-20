@@ -14,6 +14,8 @@ A collection of personal and professional projects.
 
 # ServiceNow Data Pipeline
 
+![ServiceNow Data Pipeline Architecture](/static/servicenow_dp.png)
+
 ## Overview
 
 A nine-stage production data pipeline that moves ServiceNow ITSM data (Incidents, Change Requests, Problems, CMDB) into Microsoft Power BI for operational reporting. The pipeline follows a **medallion architecture** (Bronze → Silver layers) and is fully event-driven — each successful extraction automatically triggers transformation and report refresh with no manual intervention.
