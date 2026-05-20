@@ -172,7 +172,7 @@
 /* ─── Issue card grid ────────────────────────────────────────────────────── */
 .issue-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
@@ -264,13 +264,14 @@
 .card-2 { border-left: 3px solid #bf7d1a; }
 .card-3 { border-left: 3px solid #ad7e95; }
 .card-4 { border-left: 3px solid #aab172; }
-.card-5 { border-left: 3px solid #A99CF5; }
-.card-6 { border-left: 3px solid #eb856f; }
-.card-7 { border-left: 3px solid #e18fa7; }
-.card-8 { border-left: 3px solid #7fa89a; }
+.card-5 { border-left: 3px solid #5ea8e0; }
+.card-6 { border-left: 3px solid #A99CF5; }
+.card-7 { border-left: 3px solid #eb856f; }
+.card-8 { border-left: 3px solid #e18fa7; }
+.card-9 { border-left: 3px solid #7fa89a; }
 
 /* ─── Illustration positions ─────────────────────────────────────────────── */
-$num-illustrations: 8;
+$num-illustrations: 9;
 @for $i from 1 through $num-illustrations {
   .card-illustration-#{$i} {
     position: absolute;
@@ -283,7 +284,7 @@ $num-illustrations: 8;
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media screen and (max-width: 1400px) {
   .card-title { font-size: 14px; }
-  .issue-container { grid-template-columns: repeat(4, 1fr); }
+  .issue-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media screen and (max-width: 1100px) {
@@ -320,7 +321,7 @@ $num-illustrations: 8;
     overflow: hidden;
   }
 
-  $num-cards: 8;
+  $num-cards: 9;
   @for $i from 1 through $num-cards {
     .card-illustration-#{$i} { width: 35%; }
   }

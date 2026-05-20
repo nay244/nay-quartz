@@ -1,7 +1,7 @@
 import { QuartzComponentConstructor } from "./types"
 import landingStyle from "./styles/landing.scss"
 
-export const TOTAL_CARDS = 8
+export const TOTAL_CARDS = 9
 
 export const CARDS = {
   "about-me": (
@@ -40,39 +40,48 @@ export const CARDS = {
       </div>
     </a>
   ),
+  "azure": (
+    <a href={"./azure"}>
+      <div class="card card-5">
+        <p class="card-title">Azure</p>
+        <p class="card-subhead">Node 05</p>
+        <img src="./static/node-05-azure.svg" class="card-illustration-5" />
+      </div>
+    </a>
+  ),
   "blog": (
     <a href={"./blog"}>
-      <div class="card card-5">
+      <div class="card card-6">
         <p class="card-title">Blog</p>
-        <p class="card-subhead">Node 05</p>
-        <img src="./static/node-blog.png" class="card-illustration-5" />
+        <p class="card-subhead">Node 06</p>
+        <img src="./static/node-blog.png" class="card-illustration-6" />
       </div>
     </a>
   ),
   "language-learning": (
     <a href={"./language-learning"}>
-      <div class="card card-6">
+      <div class="card card-7">
         <p class="card-title">Language Learning</p>
-        <p class="card-subhead">Node 06</p>
-        <img src="./static/node-05-language.png" class="card-illustration-6" />
+        <p class="card-subhead">Node 07</p>
+        <img src="./static/node-05-language.png" class="card-illustration-7" />
       </div>
     </a>
   ),
   "wgu": (
     <a href={"./wgu"}>
-      <div class="card card-7">
+      <div class="card card-8">
         <p class="card-title">WGU</p>
-        <p class="card-subhead">Node 07</p>
-        <img src="./static/node-06-wgu.png" class="card-illustration-7" />
+        <p class="card-subhead">Node 08</p>
+        <img src="./static/node-06-wgu.png" class="card-illustration-8" />
       </div>
     </a>
   ),
   "index-maps": (
     <a href={"./index-maps"}>
-      <div class="card card-8">
+      <div class="card card-9">
         <p class="card-title">Index & Maps</p>
-        <p class="card-subhead">Node 08</p>
-        <img src="./static/node-index.png" class="card-illustration-8" />
+        <p class="card-subhead">Node 09</p>
+        <img src="./static/node-index.png" class="card-illustration-9" />
       </div>
     </a>
   ),
@@ -83,10 +92,11 @@ const CARD_DEFS = [
   { slug: "career",            title: "Career",             node: "Node 02", n: 2, img: "node-03-career.png"   },
   { slug: "projects",          title: "Projects",           node: "Node 03", n: 3, img: "node-04-projects.png" },
   { slug: "knowledge-base",    title: "Knowledge Base",     node: "Node 04", n: 4, img: "node-02-knowledge.png"},
-  { slug: "blog",              title: "Blog",               node: "Node 05", n: 5, img: "node-blog.png"        },
-  { slug: "language-learning", title: "Language Learning",  node: "Node 06", n: 6, img: "node-05-language.png" },
-  { slug: "wgu",               title: "WGU",                node: "Node 07", n: 7, img: "node-06-wgu.png"      },
-  { slug: "index-maps",        title: "Index & Maps",       node: "Node 08", n: 8, img: "node-index.png"       },
+  { slug: "azure",             title: "Azure",              node: "Node 05", n: 5, img: "node-05-azure.svg"    },
+  { slug: "blog",              title: "Blog",               node: "Node 06", n: 6, img: "node-blog.png"        },
+  { slug: "language-learning", title: "Language Learning",  node: "Node 07", n: 7, img: "node-05-language.png" },
+  { slug: "wgu",               title: "WGU",                node: "Node 08", n: 8, img: "node-06-wgu.png"      },
+  { slug: "index-maps",        title: "Index & Maps",       node: "Node 09", n: 9, img: "node-index.png"       },
 ]
 
 const MARQUEE_TEXT =

@@ -25,6 +25,7 @@ This page serves as the connective tissue of the garden — a meta-view of the s
 | [[career\|Career]] | Work history, skills, and professional journey | Active |
 | [[projects\|Projects]] | Technical builds, side projects, and experiments | Active |
 | [[knowledge-base\|Knowledge Base]] | Notes, references, and evergreen learning | Active |
+| [[azure\|Azure]] | AZ-900 study notes — cloud concepts, services, identity & governance | Active |
 | [[blog\|Blog]] | Long-form writing and reflections | Growing |
 | [[language-learning\|Language Learning]] | Japanese study logs and resources | Active |
 | [[wgu\|WGU]] | Western Governors University coursework notes | Active |

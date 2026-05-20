@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none">
+  <!-- Cloud outline — schematic style -->
+  <path d="M 28 56 Q 16 56 16 44 Q 16 35 26 33 Q 24 19 38 17 Q 46 11 57 18 Q 63 8 76 13 Q 88 17 88 30 Q 97 31 99 40 Q 101 51 91 55 Q 86 58 78 58 L 28 56 Z"
+        stroke="#5ea8e0" stroke-width="1.5" stroke-linejoin="round" fill="rgba(94,168,224,0.07)"/>
+  <!-- Hexagon grid — Azure brand motif -->
+  <g stroke="#e0e0e0" stroke-width="0.8" opacity="0.35">
+    <polygon points="46,30 52,26 58,30 58,38 52,42 46,38"/>
+    <polygon points="58,30 64,26 70,30 70,38 64,42 58,38"/>
+    <polygon points="70,30 76,26 82,30 82,38 76,42 70,38"/>
+    <polygon points="52,42 58,38 64,42 64,50 58,54 52,50"/>
+    <polygon points="64,42 70,38 76,42 76,50 70,54 64,50"/>
+  </g>
+  <!-- Highlighted center hex -->
+  <polygon points="58,30 64,26 70,30 70,38 64,42 58,38"
+           stroke="#5ea8e0" stroke-width="1.5" fill="rgba(94,168,224,0.18)"/>
+  <!-- Center dot -->
+  <circle cx="64" cy="34" r="2.5" fill="#5ea8e0" opacity="0.8"/>
+  <!-- Connector nodes at bottom -->
+  <line x1="14" y1="70" x2="106" y2="70" stroke="#e0e0e0" stroke-width="0.5" opacity="0.25"/>
+  <circle cx="30" cy="70" r="1.8" fill="#5ea8e0" opacity="0.55"/>
+  <circle cx="64" cy="70" r="1.8" fill="#5ea8e0" opacity="0.55"/>
+  <circle cx="98" cy="70" r="1.8" fill="#5ea8e0" opacity="0.55"/>
+  <line x1="30" y1="56" x2="30" y2="70" stroke="#5ea8e0" stroke-width="0.8" opacity="0.4" stroke-dasharray="2,2"/>
+  <line x1="64" y1="54" x2="64" y2="70" stroke="#5ea8e0" stroke-width="0.8" opacity="0.4"/>
+  <line x1="98" y1="56" x2="98" y2="70" stroke="#5ea8e0" stroke-width="0.8" opacity="0.4" stroke-dasharray="2,2"/>
+</svg>
