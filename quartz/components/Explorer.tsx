@@ -19,6 +19,7 @@ const defaultOptions = {
       "career",
       "projects",
       "knowledge-base",
+      "azure",
       "blog",
       "language-learning",
       "wgu",

@@ -270,6 +270,15 @@ body[data-slug="language-learning"] .end-message { border-left-color: #eb856f; }
 body[data-slug="wgu"]               .end-message { border-left-color: #e18fa7; }
 body[data-slug="index-maps"]        .end-message { border-left-color: #7fa89a; }
 
+/* ─── Tables — prevent short label cells from line-breaking ─────────────── */
+table th {
+  white-space: nowrap;
+}
+
+table td:first-child {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 1200px) {
   .content-container {
     width: 95%;
