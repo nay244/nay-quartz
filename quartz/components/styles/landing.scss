@@ -155,9 +155,14 @@
 /* ─── Quote block (landing page only) ───────────────────────────────────── */
 .article-header.quote-block {
   margin-top: 8px;
+  padding: 16px 19px;
+
+  h1 {
+    font-size: 1.12rem;
+  }
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--indigo);
     line-height: 1.6;
     letter-spacing: 0;
