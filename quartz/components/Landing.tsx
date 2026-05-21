@@ -145,11 +145,6 @@ export default (() => {
           <p class="landing-header">Hi, I am <a href="./about-me">Nay Naing</a>.</p>
 
           <div class="landing-intro">
-            <p>
-              This site will serve as a companion on my journey to a well-examined life. It's where
-              I weave together my thoughts, my learning, and my memories to create a narrative
-              that's uniquely mine.
-            </p>
             <div class="article-header quote-block">
               <h1>Favorite Quote</h1>
               <p>
