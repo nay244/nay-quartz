@@ -8,6 +8,63 @@ A collection of personal and professional projects.
 ---
 
 <div class="article-header">
+<h1>Azure Firewall Migration</h1>
+<p>Redesigned an enterprise hub-and-spoke firewall architecture in Azure — migrating from a 2-node Active-Passive PAN-OS cluster across 4 network zones to a 3-node Active-Active-Active cluster behind an Azure Internal Load Balancer with a unified 2-zone model.</p>
+</div>
+
+# Azure Firewall Migration
+
+## Overview
+
+A network infrastructure migration project modernising a production Azure NETHUB environment. The existing design used two PAN-OS VM-500 firewalls in an Active-Passive HA pair with four discrete network zones (Outside, DMZ, Inside, Partners) and per-zone floating IPs as next hops for all spoke VNETs. The proposed design replaces this with three PAN-OS VM-300 (D8s_v5) firewalls running Active-Active-Active behind an Azure Standard Internal Load Balancer, collapsing to two zones and a single ILB next-hop IP for every spoke.
+
+## Architecture Changes
+
+| Area | Current | Proposed |
+|------|---------|----------|
+| Firewall HA model | 2× VM-500, Active-Passive | 3× VM-300, Active-Active-Active behind Azure ILB |
+| Zone model | 4 zones: Outside, DMZ, Inside, Partners | 2 zones: Outside, Inside |
+| Spoke next hop | Per-zone floating IPs (3 distinct hops) | Single Azure ILB frontend IP |
+| Internet egress | Via firewall policy / outside interface | Azure NAT Gateway on Outside subnet |
+| On-premises path | ExpressRoute → NETHUB-Prem floating IP | ExpressRoute → Gateway Subnet (unchanged) |
+| Firewall policy | Panorama 4-zone template stack | New Panorama 2-zone template stack |
+
+**Unchanged:** Gateway Subnet, ExpressRoute circuits (×2 via Equinix Cloud Exchange), VNet peerings, Application Gateway (WAF).
+
+## Key Design Decisions
+
+**Azure ILB with HA Ports** — The ILB load balancing rule uses HA Ports (protocol: All, port: 0), which is what ensures 5-tuple flow symmetry for stateful inspection. Return traffic for a session always hits the same firewall that handled the forward flow. Standard per-port LB rules are not sufficient for a stateful firewall behind an ILB.
+
+**Azure NAT Gateway** — Attached to the Outside subnet, NAT Gateway handles outbound internet SNAT at the Azure SDN layer for all three firewall outside interfaces. PAN-OS source NAT rules for internet-bound traffic are removed to prevent double-NAT.
+
+**Zone consolidation** — The DMZ, Partners, and On-Prem zones are absorbed into a single Inside zone. All spoke VNETs regardless of their former zone classification now share one route table next-hop entry pointing to the ILB frontend IP, simplifying long-term route management from three maintenance surfaces to one.
+
+## Migration Strategy
+
+A **Phased Group Cutover** approach was selected (recommended over Big-Bang and Canary options) to limit blast radius while keeping the change window under one hour. The new firewalls are fully built and validated in a blue-green fashion before the change window opens. The cutover itself is route-table-only — no firewall rebuilds occur during the window.
+
+**Build phase (Weeks 1–2):** Deploy 3× VM-300 D8s_v5 in NETHUB VNET, register to Panorama, build new 2-zone template stack, migrate security and NAT policies, provision Azure ILB (Standard SKU, HA Ports, health probe on TCP/22), provision Azure NAT Gateway.
+
+**Pre-cutover testing (Week 2–3):** ILB health probe validation across all three firewalls, policy smoke tests via jump host, NAT Gateway internet egress test, ExpressRoute/on-premises reachability, ILB session symmetry validation.
+
+**Change window (~45–60 min):**
+
+| Phase | Scope | Window |
+|-------|-------|--------|
+| Phase 1 | DMZ VNETs (DMZ-1, DMZ-2, DMZ-3) → ILB IP | T+0 to T+15 min |
+| Phase 2 | Partners VNETs (Partners-1, Partners-2) → ILB IP | T+15 to T+30 min |
+| Phase 3 | Enterprise VNETs + Gateway Route Table → ILB IP | T+30 to T+55 min |
+| Post | 72h soak, then decommission old VM-500s | T+55 → T+72h |
+
+**Rollback:** The old VM-500 HA pair and all zone floating IPs remain live throughout the change window and 72-hour soak. Rollback at any phase = revert the affected spoke route tables back to the original zone floating IP. Target execution time: under 10 minutes. For a Phase 3 rollback, the Gateway Route Table is reverted first to restore the ExpressRoute path before touching spoke route tables.
+
+## Stack
+
+PAN-OS · Panorama · Azure Virtual Network · Azure Internal Load Balancer · Azure NAT Gateway · ExpressRoute · Azure Route Tables · Bitbucket
+
+---
+
+<div class="article-header">
 <h1>ServiceNow Data Pipeline</h1>
 <p>End-to-end data pipeline extracting ServiceNow ITSM records through AWS managed services, transforming via DBT, and delivering live Power BI dashboards — built on a medallion architecture.</p>
 </div>
