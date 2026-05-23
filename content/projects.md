@@ -16,7 +16,7 @@ A collection of personal and professional projects.
 
 ## Overview
 
-A network infrastructure project modernising a production Azure NETHUB environment. The existing design used two PAN-OS VM-500 firewalls in an Active-Passive HA pair with four discrete network zones (Outside, DMZ, Inside, Partners) and per-zone floating IPs as next hops for all spoke VNETs. The new design replaces this with three PAN-OS VM-300 (D8s_v5) firewalls running Active-Active-Active behind an Azure Standard Internal Load Balancer, collapsing to two zones and a single ILB next-hop IP for every spoke.
+A network infrastructure project modernising a production Azure NETHUB environment. The existing design used two PAN-OS firewalls in an Active-Passive HA pair with four discrete network zones (Outside, DMZ, Inside, Partners) and per-zone floating IPs as next hops for all spoke VNETs. The new design replaces this with three PAN-OS firewalls running Active-Active-Active behind an Azure Standard Internal Load Balancer, collapsing to two zones and a single ILB next-hop IP for every spoke.
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;font-family:'IBM Plex Mono',monospace;">
   <div>
@@ -31,9 +31,9 @@ A network infrastructure project modernising a production Azure NETHUB environme
         <div style="border:1px dashed #fc8181;padding:7px;margin-bottom:5px;background:rgba(252,129,129,0.04);">
           <div style="font-size:9px;color:#fc8181;margin-bottom:5px;">Outside Zone</div>
           <div style="display:flex;gap:5px;">
-            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1<br/>VM-500</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1</div>
             <div style="background:#553c1a;border:1px solid #f6ad55;padding:4px 6px;text-align:center;color:#fbd38d;font-size:9px;display:flex;align-items:center;">HA</div>
-            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2<br/>VM-500</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2</div>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:5px;">
@@ -65,9 +65,9 @@ A network infrastructure project modernising a production Azure NETHUB environme
         <div style="border:1px dashed #fc814a;padding:7px;margin-bottom:5px;background:rgba(252,129,74,0.04);">
           <div style="font-size:9px;color:#fc814a;margin-bottom:5px;">Outside Zone</div>
           <div style="display:flex;gap:4px;">
-            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1<br/>VM-300</div>
-            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2<br/>VM-300</div>
-            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-3<br/>VM-300</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-3</div>
           </div>
         </div>
         <div style="border:1px dashed #68d391;padding:7px;margin-bottom:5px;background:rgba(104,211,145,0.04);">
@@ -95,7 +95,7 @@ A network infrastructure project modernising a production Azure NETHUB environme
 
 | Area | Current | New |
 |------|---------|----------|
-| Firewall HA model | 2× VM-500, Active-Passive | 3× VM-300, Active-Active-Active behind Azure ILB |
+| Firewall HA model | 2-node, Active-Passive | 3-node, Active-Active-Active behind Azure ILB |
 | Zone model | 4 zones: Outside, DMZ, Inside, Partners | 2 zones: Outside, Inside |
 | Spoke next hop | Per-zone floating IPs (3 distinct hops) | Single Azure ILB frontend IP |
 | Internet egress | Via firewall policy / outside interface | Azure NAT Gateway on Outside subnet |
