@@ -16,11 +16,84 @@ A collection of personal and professional projects.
 
 ## Overview
 
-A network infrastructure migration project modernising a production Azure NETHUB environment. The existing design used two PAN-OS VM-500 firewalls in an Active-Passive HA pair with four discrete network zones (Outside, DMZ, Inside, Partners) and per-zone floating IPs as next hops for all spoke VNETs. The proposed design replaces this with three PAN-OS VM-300 (D8s_v5) firewalls running Active-Active-Active behind an Azure Standard Internal Load Balancer, collapsing to two zones and a single ILB next-hop IP for every spoke.
+A network infrastructure project modernising a production Azure NETHUB environment. The existing design used two PAN-OS VM-500 firewalls in an Active-Passive HA pair with four discrete network zones (Outside, DMZ, Inside, Partners) and per-zone floating IPs as next hops for all spoke VNETs. The new design replaces this with three PAN-OS VM-300 (D8s_v5) firewalls running Active-Active-Active behind an Azure Standard Internal Load Balancer, collapsing to two zones and a single ILB next-hop IP for every spoke.
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;font-family:'IBM Plex Mono',monospace;">
+  <div>
+    <div style="background:#1c1c2e;border:1px solid #2a2a3a;border-top:2px solid #fc8181;padding:4px 12px;font-size:10px;color:#fc8181;letter-spacing:0.1em;text-transform:uppercase;">Before — Active-Passive · 4 Zones</div>
+    <div style="background:#0a0a0f;border:1px solid #2a2a3a;border-top:none;padding:12px;">
+      <div style="display:flex;gap:6px;margin-bottom:8px;">
+        <div style="flex:1;border:1px solid #4a5568;padding:5px;text-align:center;color:#718096;font-size:9px;">Internet</div>
+        <div style="flex:1;border:1px solid #9a75ea;padding:5px;text-align:center;color:#9a75ea;font-size:9px;">App Gateway<br/><span style="color:#4a5568;font-size:8px;">WAF</span></div>
+      </div>
+      <div style="border:1px solid #2a2a3a;padding:10px;margin-bottom:8px;">
+        <div style="font-size:9px;color:#63b3ed;font-weight:700;margin-bottom:8px;letter-spacing:0.05em;">NETHUB VNET</div>
+        <div style="border:1px dashed #fc8181;padding:7px;margin-bottom:5px;background:rgba(252,129,129,0.04);">
+          <div style="font-size:9px;color:#fc8181;margin-bottom:5px;">Outside Zone</div>
+          <div style="display:flex;gap:5px;">
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1<br/>VM-500</div>
+            <div style="background:#553c1a;border:1px solid #f6ad55;padding:4px 6px;text-align:center;color:#fbd38d;font-size:9px;display:flex;align-items:center;">HA</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2<br/>VM-500</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:5px;">
+          <div style="border:1px dashed #f6ad55;padding:5px;background:rgba(246,173,85,0.04);font-size:9px;color:#f6ad55;">DMZ Zone<br/><span style="color:#fc8181;font-size:8px;">float IP</span></div>
+          <div style="border:1px dashed #68d391;padding:5px;background:rgba(104,211,145,0.04);font-size:9px;color:#68d391;">Inside Zone<br/><span style="color:#fc8181;font-size:8px;">float IP</span></div>
+          <div style="border:1px dashed #9a75ea;padding:5px;background:rgba(154,117,234,0.04);font-size:9px;color:#9a75ea;">Partners Zone<br/><span style="color:#fc8181;font-size:8px;">float IP</span></div>
+          <div style="border:1px dashed #63b3ed;padding:5px;background:rgba(99,179,237,0.04);font-size:9px;color:#63b3ed;">On-Prem Zone<br/><span style="color:#fc8181;font-size:8px;">float IP</span></div>
+        </div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#718096;">Gateway Subnet · ExpressRoute ×2</div>
+      </div>
+      <div style="font-size:9px;color:#718096;margin-bottom:4px;text-align:center;">3 different next-hop floating IPs</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;">
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">DMZ VNETs<br/><span style="color:#f6ad55;font-size:8px;">→ DMZ float</span></div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">Enterprise<br/><span style="color:#68d391;font-size:8px;">→ Inside float</span></div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">Partners<br/><span style="color:#9a75ea;font-size:8px;">→ Partners float</span></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div style="background:#1c1c2e;border:1px solid #2a2a3a;border-top:2px solid #00ff88;padding:4px 12px;font-size:10px;color:#00ff88;letter-spacing:0.1em;text-transform:uppercase;">New — Active-Active-Active · 2 Zones</div>
+    <div style="background:#0a0a0f;border:1px solid #2a2a3a;border-top:none;padding:12px;">
+      <div style="display:flex;gap:6px;margin-bottom:8px;">
+        <div style="flex:1;border:1px solid #4a5568;padding:5px;text-align:center;color:#718096;font-size:9px;">Internet</div>
+        <div style="flex:1;border:1px solid #9a75ea;padding:5px;text-align:center;color:#9a75ea;font-size:9px;">App Gateway<br/><span style="color:#4a5568;font-size:8px;">WAF</span></div>
+        <div style="flex:1;border:1px solid #00ff88;padding:5px;text-align:center;color:#00ff88;font-size:9px;">NAT GW<br/><span style="color:#4a5568;font-size:8px;">NEW</span></div>
+      </div>
+      <div style="border:1px solid #2a2a3a;padding:10px;margin-bottom:8px;">
+        <div style="font-size:9px;color:#63b3ed;font-weight:700;margin-bottom:8px;letter-spacing:0.05em;">NETHUB VNET</div>
+        <div style="border:1px dashed #fc814a;padding:7px;margin-bottom:5px;background:rgba(252,129,74,0.04);">
+          <div style="font-size:9px;color:#fc814a;margin-bottom:5px;">Outside Zone</div>
+          <div style="display:flex;gap:4px;">
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-1<br/>VM-300</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-2<br/>VM-300</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:5px;text-align:center;color:#fed7d7;font-size:9px;">FW-3<br/>VM-300</div>
+          </div>
+        </div>
+        <div style="border:1px dashed #68d391;padding:7px;margin-bottom:5px;background:rgba(104,211,145,0.04);">
+          <div style="font-size:9px;color:#68d391;margin-bottom:5px;">Inside Zone</div>
+          <div style="display:flex;gap:4px;margin-bottom:5px;">
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:4px;text-align:center;color:#fed7d7;font-size:9px;">FW-1</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:4px;text-align:center;color:#fed7d7;font-size:9px;">FW-2</div>
+            <div style="flex:1;background:#3d1515;border:1px solid #fc8181;padding:4px;text-align:center;color:#fed7d7;font-size:9px;">FW-3</div>
+          </div>
+          <div style="background:rgba(0,255,136,0.08);border:1px solid #00ff88;padding:5px;text-align:center;font-size:9px;color:#00ff88;">Azure ILB · HA Ports · Universal next hop</div>
+        </div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#718096;">Gateway Subnet · ExpressRoute ×2 · Unchanged</div>
+      </div>
+      <div style="font-size:9px;color:#00ff88;margin-bottom:4px;text-align:center;">1 universal next-hop IP (ILB)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;">
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">DMZ VNETs<br/><span style="color:#00ff88;font-size:8px;">→ ILB IP</span></div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">Enterprise<br/><span style="color:#00ff88;font-size:8px;">→ ILB IP</span></div>
+        <div style="border:1px solid #2a2a3a;padding:5px;text-align:center;font-size:9px;color:#a0aec0;">Partners<br/><span style="color:#00ff88;font-size:8px;">→ ILB IP</span></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Architecture Changes
 
-| Area | Current | Proposed |
+| Area | Current | New |
 |------|---------|----------|
 | Firewall HA model | 2× VM-500, Active-Passive | 3× VM-300, Active-Active-Active behind Azure ILB |
 | Zone model | 4 zones: Outside, DMZ, Inside, Partners | 2 zones: Outside, Inside |
@@ -38,25 +111,6 @@ A network infrastructure migration project modernising a production Azure NETHUB
 **Azure NAT Gateway** — Attached to the Outside subnet, NAT Gateway handles outbound internet SNAT at the Azure SDN layer for all three firewall outside interfaces. PAN-OS source NAT rules for internet-bound traffic are removed to prevent double-NAT.
 
 **Zone consolidation** — The DMZ, Partners, and On-Prem zones are absorbed into a single Inside zone. All spoke VNETs regardless of their former zone classification now share one route table next-hop entry pointing to the ILB frontend IP, simplifying long-term route management from three maintenance surfaces to one.
-
-## Migration Strategy
-
-A **Phased Group Cutover** approach was selected (recommended over Big-Bang and Canary options) to limit blast radius while keeping the change window under one hour. The new firewalls are fully built and validated in a blue-green fashion before the change window opens. The cutover itself is route-table-only — no firewall rebuilds occur during the window.
-
-**Build phase (Weeks 1–2):** Deploy 3× VM-300 D8s_v5 in NETHUB VNET, register to Panorama, build new 2-zone template stack, migrate security and NAT policies, provision Azure ILB (Standard SKU, HA Ports, health probe on TCP/22), provision Azure NAT Gateway.
-
-**Pre-cutover testing (Week 2–3):** ILB health probe validation across all three firewalls, policy smoke tests via jump host, NAT Gateway internet egress test, ExpressRoute/on-premises reachability, ILB session symmetry validation.
-
-**Change window (~45–60 min):**
-
-| Phase | Scope | Window |
-|-------|-------|--------|
-| Phase 1 | DMZ VNETs (DMZ-1, DMZ-2, DMZ-3) → ILB IP | T+0 to T+15 min |
-| Phase 2 | Partners VNETs (Partners-1, Partners-2) → ILB IP | T+15 to T+30 min |
-| Phase 3 | Enterprise VNETs + Gateway Route Table → ILB IP | T+30 to T+55 min |
-| Post | 72h soak, then decommission old VM-500s | T+55 → T+72h |
-
-**Rollback:** The old VM-500 HA pair and all zone floating IPs remain live throughout the change window and 72-hour soak. Rollback at any phase = revert the affected spoke route tables back to the original zone floating IP. Target execution time: under 10 minutes. For a Phase 3 rollback, the Gateway Route Table is reverted first to restore the ExpressRoute path before touching spoke route tables.
 
 ## Stack
 
